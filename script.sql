@@ -63,7 +63,7 @@ CREATE TABLE suggestion(
     ON DELETE CASCADE ON UPDATE CASCADE
 );
 
-CREATE TABLE messages(
+CREATE TABLE message(
     msg_id INT AUTO_INCREMENT NOT NULL PRIMARY KEY,
     incoming_msg_id INT NOT NULL,
     outgoing_msg_id INT NOT NULL,
@@ -74,6 +74,16 @@ CREATE TABLE file_path(
     new_file_name VARCHAR(255) PRIMARY KEY,
     file_name VARCHAR(255),
     path_file VARCHAR(255),
+    id_grp INT,
+
+    FOREIGN KEY (id_grp) REFERENCES groupe(id_grp) 
+    ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+CREATE TABLE folder_path(
+    folder_id INT NOT NULL PRIMARY KEY,
+    folder_name VARCHAR(255),
+    folder_path VARCHAR(255),
     id_grp INT,
 
     FOREIGN KEY (id_grp) REFERENCES groupe(id_grp) 
