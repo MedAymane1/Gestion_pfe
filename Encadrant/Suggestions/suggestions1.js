@@ -4,7 +4,7 @@ suggList.onload = getSuggestions();
 
 function getSuggestions() {
   let xhr = new XMLHttpRequest();
-  xhr.open("GET", "../Suggestions/sugg_back.php?code_enc=123456", true);
+  xhr.open("GET", "../Suggestions/sugg_back.php?code_enc=65478924", true);
   xhr.onload = ()=> {
     if(xhr.readyState === XMLHttpRequest.DONE) {
       if(xhr.status === 200) {
@@ -34,7 +34,7 @@ function newSuggest() {
     }
     xhr.open("POST", "../Suggestions/sugg_back.php", true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    xhr.send("codeEnc=123456&suggText=" + suggText.value);
+    xhr.send("codeEnc=65478924&suggText=" + suggText.value);
   }
 }
 
@@ -51,5 +51,5 @@ function removeSugg(btnValue) {
     }
     xhr.open("POST", "../Suggestions/sugg_back.php", true);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    xhr.send("codeEnc=123456&suggId=" + btnValue);
+    xhr.send("codeEnc=65478924&suggId=" + btnValue);
 }

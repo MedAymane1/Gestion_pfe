@@ -1,0 +1,60 @@
+.group1 {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
+    transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+    cursor: pointer;
+}
+
+.group1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
+}
+
+.menu_btn1 {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.menu_btn1:hover {
+    color: blue;
+    font-size: 26px;
+}
+
+.action_menu1 {
+    z-index: 1;
+    position: absolute;
+    padding: 15px 0;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border-radius: 15px;
+    top: 30px;
+    right: 15px;
+    transition: .3s;
+}
+
+.action_menu1 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.action_menu1 ul li {
+    width: 100%;
+    padding: 10px 15px;
+}
+
+.action_menu1 ul li i {
+    padding-right: 10px;
+
+}
+
+.action_menu1 ul li:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.d_none1 {
+    display: none;
+}

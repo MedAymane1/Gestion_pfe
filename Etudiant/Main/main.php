@@ -69,37 +69,27 @@
     <main class="height_100">
         <!-- group space -->
         <section class="cont active_link" id="grp">
-            <?php
-            include_once "../Groups/groups.php";
-            ?>
+            
         </section>
 
         <!-- profil space -->
         <section class="cont unactive_link" id="prfl">
-            <?php
-            include_once "../Profile/profile.php";
-            ?>
+            
         </section>
         
         <!-- messages space -->
         <section class="cont message unactive_link" id="msg">
-            <?php
-            include_once "../Messages/messages.php";
-            ?>
+            
         </section>
         
         <!-- calendar space -->
         <section class="cont unactive_link" id="clndr">
-            <?php
-            include_once "../Calendar/calendar.php";
-            ?>
+            
         </section>
         
         <!-- suggestions space -->
         <section class="cont unactive_link" id="sugg">
-            <?php
-            include_once "../Suggestions/suggestions.php";
-            ?>
+            
         </section>
     </main>
     <!--Container main end-->
