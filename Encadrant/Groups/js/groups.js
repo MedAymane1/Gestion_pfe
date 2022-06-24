@@ -8,7 +8,6 @@ function getGroups() {
   xhr.onload = () => {
     if (xhr.readyState === XMLHttpRequest.DONE) {
       if (xhr.status === 200) {
-        // console.log(xhr.response);
         allGroups.innerHTML = xhr.response;
         // call the function showMenu
         // showMenu();
@@ -79,7 +78,6 @@ function getStudents() {
   xhr.onload = () => {
     if (xhr.readyState === XMLHttpRequest.DONE) {
       if (xhr.status === 200) {
-        // console.log(xhr.response);
         stu.innerHTML = xhr.response;
       }
     }
