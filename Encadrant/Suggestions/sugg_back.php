@@ -16,7 +16,7 @@ if( isset($_GET["code_enc"]) ) {
                                     onclick="removeSugg(this.value)">
                                 &#215
                             </button>
-                            </li>';
+                          </li>';
         }
         echo $response;
     }
