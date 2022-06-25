@@ -34,6 +34,10 @@ function hideMenu(element) {
   element.classList.toggle("d_none1");
 }
 
+function hideMenu_2(element){
+  element.childNodes[3].classList.add("d_none1");
+}
+
 // delete group from the database
 function deleteGroup(id) {
   let idGroup = id.getAttribute("data-id");

@@ -19,7 +19,7 @@ if( isset($_GET["code_enc"]) && isset($_GET["status"]) ) {
             while($data = $res->fetch()) {
                 $response .= '<div class="col pt-5">
                                 <div class="card group1 mx-4 position-relative"
-                                    data-id="' . $data["id_grp"] . '">
+                                    data-id="' . $data["id_grp"] . '" onmouseleave="hideMenu_2(this)" >
                                     <span id="menu-btn"
                                           class="menu_btn1"
                                           onclick="showMenu(this)">
