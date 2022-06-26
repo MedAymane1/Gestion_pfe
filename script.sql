@@ -90,17 +90,30 @@ CREATE TABLE folder_path(
     ON DELETE CASCADE ON UPDATE CASCADE
 );
 
+-- CREATE TABLE liste_etd(
+-- 	apogee INT PRIMARY KEY,
+--     cne VARCHAR(255) UNIQUE NOT NULL,
+--     nom VARCHAR(255) NOT NULL,
+--     prenom VARCHAR(255) NOT NULL
+-- );
+
+-- CREATE TABLE liste_enc(
+-- 	code_enc INT PRIMARY KEY,
+--     nom VARCHAR(255) NOT NULL,
+--     prenom VARCHAR(255) NOT NULL
+-- );
+
 CREATE TABLE liste_etd(
 	apogee INT PRIMARY KEY,
     cne VARCHAR(255) UNIQUE NOT NULL,
-    nom VARCHAR(255) NOT NULL,
-    prenom VARCHAR(255) NOT NULL
+    nom_etd VARCHAR(255) NOT NULL,
+    prenom_etd VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE liste_enc(
 	code_enc INT PRIMARY KEY,
-    nom VARCHAR(255) NOT NULL,
-    prenom VARCHAR(255) NOT NULL
+    nom_enc VARCHAR(255) NOT NULL,
+    prenom_enc VARCHAR(255) NOT NULL
 );
 
 /*
