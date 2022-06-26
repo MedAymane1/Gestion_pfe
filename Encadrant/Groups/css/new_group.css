@@ -1,0 +1,147 @@
+/* <link rel="stylesheet" href="index.css?v=<?php echo time(); ?>"> */
+
+.box1 {
+    padding: 32px;
+}
+
+.back_icon1 {
+    font-size: 24px;
+    margin: 0px 8px;
+    cursor: pointer;
+}
+
+.back_icon1:hover {
+    font-size: 26px;
+    margin: 0px 10px 0px 8px;
+    color: grey;
+}
+/* 
+.grp_name1 {
+    padding: 0.65rem 1.25rem 0.65rem 1.25rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline-color: #c5e2fc;
+} */
+/* class for the selected members area
+.members1 {
+    background-color: white;
+} */
+
+.group_btn1 {
+    font-size: 1rem;
+}
+
+.search_etd1 {
+    background-image: url("../../../Uploads/Default_images/search.png");
+    background-position: 0.75rem 0.7rem;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.65rem 1.25rem 0.65rem 2.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 0.75rem;
+    outline-color: #c5e2fc;
+}
+
+.list_wrapper1 {
+    max-height: 400px;
+    overflow: auto;
+}
+
+/* Custum the scrollbar */
+.list_wrapper1::-webkit-scrollbar-track {
+    background-color: #ddd;
+    border-radius: 12px;
+}
+
+.list_wrapper1::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f5f5f5;
+}
+
+.list_wrapper1::-webkit-scrollbar-thumb {
+    width: 5px;
+    border-radius: 10px;
+    background-color: rgb(174, 174, 174);
+}
+
+.list_wrapper1::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(158, 158, 158);
+}
+
+.list_wrapper1::-webkit-scrollbar:horizontal {
+    height: 0px;
+}
+/* End of scrollbar style */
+
+.list_etd1 {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.list_etd1 thead {
+    position: sticky;
+    top: 0;
+}
+
+.list_etd1 tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.list_etd1 thead,
+.list_etd1 tr:hover {
+    background-color: #c5e2fc;
+}
+
+.list_etd1 th,
+.list_etd1 td {
+    text-align: left;
+    padding: 0.75rem;
+    padding-left: 1.25rem;
+    width: 22%;
+}
+
+.list_etd1 th {
+    font-size: 1.25rem;
+}
+
+tr .check_cell1 {
+    width: 12%;
+}
+
+.check_cell1 input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-top: 0.15rem;
+}
+
+@media screen and (min-width: 992px) {
+    .box1 {
+        padding: 32px 0px 8px 0px;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .back_icon1 {
+        font-size: 28px;
+        margin-right: 32px;
+        cursor: pointer;
+    }
+
+    .back_icon1:hover {
+        font-size: 30px;
+        margin-right: 35px;
+        color: grey;
+    }
+
+    .group_btn1 {
+        font-size: 1.25rem;
+    }
+
+    .list_etd1 {  
+        font-size: 1.1rem;
+    }
+}

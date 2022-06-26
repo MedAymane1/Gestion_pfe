@@ -5,7 +5,8 @@ include_once "../../../db_conn.php";
 if( isset($_GET["code_enc"]) && isset($_GET["status"]) ) {
     if($_GET["status"] === "get_groups") {
         try {
-            $request = "SELECT * FROM groupe ORDER BY id_grp ASC" ;
+            $request = "SELECT id_grp, nom_grp, img_grp
+                        FROM groupe ORDER BY id_grp ASC" ;
             $res = $conn->query($request);
             $response = '<div class="col pt-5 pb-3">
                             <div class="card group1 mx-4" onclick="newGroup()">
@@ -19,7 +20,8 @@ if( isset($_GET["code_enc"]) && isset($_GET["status"]) ) {
             while($data = $res->fetch()) {
                 $response .= '<div class="col pt-5">
                                 <div class="card group1 mx-4 position-relative"
-                                    data-id="' . $data["id_grp"] . '" onmouseleave="hideMenu_2(this)" >
+                                     data-id="' . $data["id_grp"] . '" 
+                                     onmouseleave="hideMenu_2(this)">
                                     <span id="menu-btn"
                                           class="menu_btn1"
                                           onclick="showMenu(this)">
@@ -46,7 +48,7 @@ if( isset($_GET["code_enc"]) && isset($_GET["status"]) ) {
                                         <h5 class="card-title">' . $data["nom_grp"] . '</h5>
                                     </div>
                                 </div>
-                            </div>';
+                              </div>';
             }
             echo $response;
         }
@@ -61,7 +63,8 @@ if( isset($_POST["code_enc"]) && isset($_POST["idGroup"]) && isset($_POST["statu
     if( $_POST["status"] === "delete" ) {
         try {
             $id = $_POST["idGroup"];
-            $request = "DELETE FROM groupe WHERE id_grp=$id";
+            $request = "DELETE FROM compte WHERE id_compte = (
+                            SELECT id_compte FROM groupe WHERE id_grp=$id)";
             $response = $conn->exec($request);
             echo $response;
         }
@@ -70,5 +73,4 @@ if( isset($_POST["code_enc"]) && isset($_POST["idGroup"]) && isset($_POST["statu
         }
     }
 }
-
 ?>

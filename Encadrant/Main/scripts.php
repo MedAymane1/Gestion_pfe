@@ -1,7 +1,7 @@
 <script src="../../bootstrap.bundle.min.js"></script>
 <script src="main.js"></script>
-<!-- <script src="../Groups/js/newGroup.js"></script> -->
 <script src="../Groups/js/groups.js"></script>
+<script src="../Groups/js/new_group.js"></script>
 <script src="../Profile/profile1.js"></script>
 <script src="../Messages/js/messages.js"></script>
 <script src="../Messages/js/users.js"></script>
