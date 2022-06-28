@@ -1,7 +1,8 @@
-const member = document.querySelectorAll(".continer_all_chat .user_space .users-list a");
+const member = document.querySelectorAll(".continer_all_chat .user_space .users-list-chat a");
 const chat_area = document.querySelector(".continer_all_chat .chats_space");
-const users_list = document.querySelector(".continer_all_chat .user_space");
-const icon_arrow_left = document.getElementById("arrow-left");
+const users_list = document.querySelector(".continer_all_chat .user_space")
+const icon_arrow_left = document.getElementById("arrow-left")
+console.log(window)
 
 member.forEach(function(e){
     e.onclick =()=>{
@@ -18,21 +19,19 @@ member.forEach(function(e){
         }
     }
 )
-
 window.onload = ()=>{
     if(window.innerWidth <= 850)
     users_list.style.display = "flex"; 
 }
-
 setInterval(function(){
-    // console.log(chat_area.classList.contains("un_active_chat"));
+    console.log(chat_area.classList.contains("un_active_chat"));
     if(window.innerWidth < 850 && chat_area.classList.contains("un_active_chat")){
     users_list.style.display = "flex";
     }
     if(window.innerWidth < 850 && chat_area.classList.contains("active_chat")){
         chat_area.style.display = "flex";
     }
-},100)
+},500)
 
 
 icon_arrow_left.onclick=()=>{

@@ -1,0 +1,262 @@
+
+/* class contains all the upload sapce */
+.contener_uploads{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  /* drop space contains uload folder and files */
+  .drop_space{
+    border-radius: 10px;
+    width: 33%;
+    height: 71vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .drop_space .upload_folder{
+    width: 100%;
+    height: 42%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .drop_space .upload-file{
+    width: 100%;
+    height: 37%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  /* space to schow folder and file */
+  .space_folder{
+    box-sizing: 25px;
+    width: 32%;
+    height: 85vh;
+    margin: 12px 6px 0 5px;
+    box-shadow: 1px 1px 10px rgb(0 0 0 / 22%);
+    border-radius: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .space_file{
+    width: 33%;
+    height: 85vh;
+    margin: 12px 6px 0 5px;
+    /* background-color:#6990F2; */
+    box-shadow: 1px 1px 10px rgb(0 0 0 / 22%);
+    border-radius: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrapper_F_f{
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    padding: 30px;
+    box-shadow: 1px 1px 10px rgb(0 0 0 / 22%)
+  }
+  .wrapper_F_f header{
+    color: #6990F2;
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .wrapper_F_f form{
+    height: 150px;
+    display: flex;
+    cursor: pointer;
+    margin: 30px 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 2px dashed #6990F2;
+  }
+  form :where(i, p){
+    color: #6990F2;
+  }
+  form i{
+    font-size: 50px;
+  }
+  form p{
+    margin-top: 15px;
+    font-size: 16px;
+  }
+
+  .contener_uploads .title{
+    width: 100%;
+    height: 50px;
+    background-color: #395fbe;;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contener_uploads .title p{
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600
+  }
+
+/* class show is a combines between uploded_files_space and uploded_folders_space */
+  .contener_uploads .schow{
+    width: 99%;
+    margin-top: 3px;
+    height: calc(100% - 55px);
+    border-radius: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  /* style folder  */
+  .space_file .uploded_files_space .file,
+  .space_folder .uploded_folders_space .folder{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    margin-top: 6.3px;
+    /* border-bottom: gray 1px solid; */
+    border-bottom: 3px solid #e6e6e6;
+
+  }
+  .space_file .uploded_files_space .file .file_name,
+  .space_folder .uploded_folders_space .folder .folder_name{
+    width: 50%;
+    height: 85%;
+    position: relative;
+  }
+  .space_file .uploded_files_space .file .file_name i,
+  .space_folder .uploded_folders_space .folder .folder_name i{
+    font-size: 28px;
+    position: absolute;
+    top: 10%;
+    color: #444;
+    left: 6%;
+  }
+  .space_file .uploded_files_space .file .file_name p,
+  .space_folder .uploded_folders_space .folder .folder_name p{
+    width: 80%;
+    position: absolute;
+    left: 69%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 19px;
+    font-weight: 700;
+    color: #6990F2;
+  }
+  
+  .space_file .uploded_files_space .file .downlond,
+  .space_folder .uploded_folders_space .folder .downlond{
+    margin-top: 2px;
+    position: relative;
+    width:25%;
+    height: 85%;
+  }
+  .space_file .uploded_files_space .file .downlond a,
+  .space_folder .uploded_folders_space .folder .downlond a{
+    margin-top: 1px;
+    width: 50px;
+    height: 45px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .space_file .uploded_files_space .file .downlond a:hover,
+  .space_folder .uploded_folders_space .folder .downlond a:hover{
+    border-bottom: 3px solid #312929;
+    border-radius: 0px;
+  }
+  .space_file .uploded_files_space .file .downlond a .bx,
+  .space_folder .uploded_folders_space .folder .downlond a .bx{
+    font-size: 38px;
+    position: absolute;
+    left: 46%;
+    top: 41%;
+    transform: translate(-50%,-50%);
+    color: #39435c!important;
+  }
+  .space_file .uploded_files_space .file .button-remove,
+  .space_folder .uploded_folders_space .folder .button-remove{
+    position: relative;
+    width:25%;
+    height: 85%;
+    padding-top: 15px;
+  }
+
+  .space_file .uploded_files_space .file .button-remove button,
+  .space_folder .uploded_folders_space .folder .button-remove button{
+    margin-top: 1px;
+    width: 50px;
+    height: 45px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    outline: none;
+    border: none;
+    background:#f8f8f8;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  .space_file .uploded_files_space .file .button-remove button:hover,
+  .space_folder .uploded_folders_space .folder .button-remove button:hover{
+    border-bottom: 3px solid #312929;
+    border-radius: 0px;
+  }
+
+  .space_file .uploded_files_space .file .button-remove button .fa-trash-can,
+  .space_folder .uploded_folders_space .folder .button-remove button .fa-trash-can{
+    font-size: 30px;
+    position: absolute;
+    left: 46%;
+    top: 41%;
+    transform: translate(-50%,-50%);
+    color: #39435c!important;
+  }
+
+  @media screen and (max-width: 935px){
+    .contener_uploads{
+      height: fit-content;
+      flex-direction: column;
+    }
+    .drop_space{
+
+      flex-direction: row;
+      height: fit-content !important;
+      justify-content: space-evenly;
+      width: 100%;
+      /* height: 50vh !important; */
+    } 
+    .drop_space .upload_folder{
+      margin-top: 0px;
+      width: 45%;
+      /* height: 25vh; */
+      /* height: fit-content; */
+    }
+    .drop_space .upload-file{
+      width: 45%;
+      height: fit-content;
+      /* height: 25vh !important; */
+    }
+    .space_folder{
+      width: 100%;
+      height:350px
+    }
+    .space_file{
+      width: 100%;
+      height:350px;
+    }
+  }

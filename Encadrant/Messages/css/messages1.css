@@ -1,11 +1,11 @@
-.wrapper{
+.wrapper3{
     /* border: #000 2px solid; */
     background: rgb(255, 255, 255);
     width: 450px;
     border-radius: 20px;
     box-shadow: 0 0 128px 0 rgba(0, 0,0, 0,1), 0 0 68px -48px rgba(0, 0, 0, 0.5);
 }
-.wrapper.chat-zone {
+.wrapper3.chat-zone {
     width: 100%;
 }
 
@@ -15,18 +15,18 @@
     padding: 15px 20px;
 }
 .users header,
-.users-list a{
+.users-list-chat a{
     display: flex;
     align-items: center;
     justify-content: space-between; 
     padding-bottom: 2px;
     border-bottom :1px solid #e6e6e6 ;
 }
-.wrapper img{
+.wrapper3 img{
     object-fit: cover;
     border-radius:50% ;
 }
-:is(.users,.users-list) .content{
+:is(.users,.users-list-chat) .content{
     display: flex;
     align-items: center;
 }
@@ -34,11 +34,11 @@
     height: 40px;
     width: 40px;
 }
-:is(.users,.users-list) .details{
+:is(.users,.users-list-chat) .details{
     color:#000 ;
     margin-left: 15px ;
 }
-:is(.users,.users-list) .details span{
+:is(.users,.users-list-chat) .details span{
     font-size: 18px;
     font-weight: 500;
 }
@@ -87,38 +87,39 @@
     color:#fff ;
     background: #333;
 }
-/* .users-list::-webkit-scrollbar{
+/* .users-list-chat::-webkit-scrollbar{
     width: 0;
 } */
-.users-list{
+.users-list-chat{
     max-height: 300px;
     overflow-y: auto;
 }
-.users-list a .content img{
+.users-list-chat a .content img{
     width: 40px;
     height: 40px;
 
 }
-.users-list a{
+.users-list-chat a{
     text-decoration: none;
     padding-right:15px ;
     page-break-after: 10px;
     margin-bottom: 10px;
     border-bottom-color: #f1f1f1;
+    margin-left: 20px;
 }
-.users-list a:last-child{
+.users-list-chat a:last-child{
     border: none;
     margin-bottom: 0;
 }
-.users-list a .status{
+.users-list-chat a .status{
     font-size: 12px;
     color: #468669;
 }
-.users-list a .content p{
+.users-list-chat a .content p{
     color: #67676a;
 }
 /* we use this class in php to show offine status*/
-.users-list a .status.offline{
+.users-list-chat a .status.offline{
     color: #ccc;
 }
 /* style  chat-area */
@@ -165,7 +166,7 @@
 }
 .outgoing .details {
     margin-left: auto;
-    max-width: calc(100% - 100px);
+    max-width: calc(100% - 95px);
 }
 .outgoing .details p{
     background: #333;
@@ -183,7 +184,7 @@
 }
 .incoming .details{
     /* margin-left: 5px; */
-    max-width: calc(100% - 60px);
+    max-width: calc(100% - 95px);
     margin-right: auto;
 }
 .incoming .details p{
@@ -229,7 +230,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width:45%;
+    width:40%;
     height: 100%;
     margin-right: 10px;
 }
@@ -237,41 +238,50 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width:50%;
+    width:55%;
     height: 100%;
 }
 
 .continer_all_chat .chats_space{
-    transition: 5s;
+    transition: 1s;
     display: none;
+}
+
+@media screen and (max-width: 730px) and (min-width:450px){
+        .users-list-chat a{
+        margin-left: 19px;
+        }
 }
 
 @media screen and (max-width: 850px) {
     .continer_all_chat .user_space{
-        width: 90%;
+        width: 100%;
         display: none;
     }
-    .continer_all_chat .user_space .wrapper.users{
+    .continer_all_chat .user_space .wrapper3.users{
         width: 100%;
     }
     .continer_all_chat .chats_space{
-        width: 90%;
+        width: 100%;
         transition: 1s;
     }
-    .wrapper.chat-zone{
-        width: 90%;
+    .wrapper3.chat-zone{
+        width: 100%;
     }
     .continer_all_chat .chats_space  .outgoing .details {
         margin-left: auto;
-        max-width: calc(100% - 50px);
+        max-width: calc(100% - 80px);
     }
     .continer_all_chat .chats_space .incoming .details{
         /* margin-left: 5px; */
-        max-width: calc(100% - 50px);
+        max-width: calc(100% - 80px);
         margin-right: auto;
     }
     .continer_all_chat .chats_space .chat-area header .back-icon{
 
         display: block;
+    }
+    .users-list-chat a{
+        margin-left: 0px;
     }
 }

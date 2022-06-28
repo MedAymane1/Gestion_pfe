@@ -11,7 +11,10 @@
     <?php include_once "styles.php" ?>
 </head>
 
-<body id="body-pd" class="bg-light" onload="renderDate()">
+<?php include "SessionCheck.php" ?>
+<!-- onload="renderDate()" removed form tag bady  -->
+
+<body id="body-pd" class="bg-light" >
     <header class="header" id="header">
         <div class="header_toggle">
             <i class="bx bx-menu" id="header-toggle"></i>
@@ -69,6 +72,7 @@
     <main class="height_100">
         <!-- group space -->
         <section class="cont active_link" id="grp">
+           <?php include "../Upload_space/upload.php";?>
             
         </section>
 
@@ -94,7 +98,7 @@
     </main>
     <!--Container main end-->
 
-    <?php include_once "scripts.php" ?>
+    <?php include_once "scripts1.php" ?>
 </body>
 
 </html>

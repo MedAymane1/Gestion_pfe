@@ -68,17 +68,16 @@ CREATE TABLE file_path(
     new_file_name VARCHAR(255) PRIMARY KEY,
     file_name VARCHAR(255),
     path_file VARCHAR(255),
-
+    nb_file int AUTO_INCREMENT UNIQUE;
     id_grp INT,
     FOREIGN KEY (id_grp) REFERENCES groupe(id_grp) 
     ON DELETE CASCADE ON UPDATE CASCADE
 );
-
 CREATE TABLE folder_path(
     folder_id INT NOT NULL PRIMARY KEY,
     folder_name VARCHAR(255),
     folder_path VARCHAR(255),
-
+    nb_folder int AUTO_INCREMENT UNIQUE;
     id_grp INT,
     FOREIGN KEY (id_grp) REFERENCES groupe(id_grp) 
     ON DELETE CASCADE ON UPDATE CASCADE

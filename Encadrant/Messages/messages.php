@@ -1,7 +1,7 @@
 <div class="continer_all_chat pt-5">
     <!-- users_space -->
     <div class="user_space">
-        <div class="wrapper users">
+        <div class="wrapper3 users">
             <section class="users">
                 <header>
                     <div class="content">
@@ -18,7 +18,7 @@
                     <input type="text" placeholder="Enter name to search">
                     <button><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
-                <div class="users-list">
+                <div class="users-list-chat">
                     <a href="#1234">
                         <div class="content">
                             <img src="../../images/member-6.png" alt="">
@@ -134,7 +134,7 @@
     <!-- chats_space -->
     <div class="chats_space un_active_chat">
         <div class="chats_zoone">
-            <div class="wrapper chat-zone">
+            <div class="wrapper3 chat-zone">
                 <section class="chat-area">
                     <header>
                         <a href="#" id="arrow-left" class="back-icon"><i class="fa-solid fa-arrow-left"></i></a>
