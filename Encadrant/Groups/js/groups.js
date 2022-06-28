@@ -2,7 +2,7 @@
 document.onload = getGroups();
 function getGroups() {
   let xhr = new XMLHttpRequest();
-  xhr.open("GET", "../Groups/php/groups_back.php?code_enc=123456&status=get_groups", true);
+  xhr.open("GET", "../Groups/php/groups_back.php?status=get_groups", true);
   xhr.onload = () => {
     if (xhr.readyState === XMLHttpRequest.DONE) {
       if (xhr.status === 200) {
@@ -39,5 +39,5 @@ function deleteGroup(id) {
   };
   xhr.open("POST", "../Groups/php/groups_back.php", true);
   xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-  xhr.send("code_enc=123456&idGroup=" + idGroup + "&status=delete");
+  xhr.send("idGroup=" + idGroup + "&status=delete");
 }

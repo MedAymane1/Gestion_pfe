@@ -1,9 +1,11 @@
 <?php
 
+session_start();
+
 include_once "../../../db_conn.php";
 
 // Get the students list from the database
-if( isset($_GET["code_enc"]) && isset($_GET["status"]) ) {
+if( isset($_GET["status"]) ) {
     if($_GET["status"] === "get_students") {
         try{
             $query = "SELECT apogee, cne, nom_etd, prenom_etd 
@@ -197,7 +199,7 @@ if( isset($_POST["submit"]) ) {
         $password = password_hash($_POST["passwd"], PASSWORD_DEFAULT);
         $grpName = $_POST["groupName"];
         $nbMembre = count($_POST["member"]);
-        // $codeEnc = $_SESSION["code_enc"];
+        $codeEnc = $_SESSION["code_enc"];
 
         $conn->beginTransaction();
         $sql1 = "INSERT INTO compte(username, passwd, statut)
@@ -205,7 +207,7 @@ if( isset($_POST["submit"]) ) {
         $conn->exec($sql1);
     
         $sql2 = "INSERT INTO groupe(nom_grp, nb_membre, id_compte, code_enc) 
-                    VALUES ('$grpName', $nbMembre, LAST_INSERT_ID(), 65478924)";
+                    VALUES ('$grpName', $nbMembre, LAST_INSERT_ID(), $codeEnc)";
         $conn->exec($sql2);
         
         foreach($_POST["member"] as $mmbr) {

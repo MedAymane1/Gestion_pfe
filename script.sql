@@ -132,4 +132,9 @@ INSERT INTO suggestion (text_sugg, code_enc) VALUES ('suggestion 1', 65478924),
                                                     ('suggestion 8', 65478924),
                                                     ('suggestion 9', 65478924),
                                                     ('suggestion 10', 65478924)
+
+INSERT INTO liste_enc VALUE (65478924, 'JELLOULI', 'Ismail');
+
+INSERT INTO liste_etd VALUE (18031991, 'p120097758', 'ASSLADDAY', 'Mohamed Ayamne');
+
 */

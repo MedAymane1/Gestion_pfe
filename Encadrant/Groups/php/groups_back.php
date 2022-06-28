@@ -1,16 +1,19 @@
 <?php
+session_start();
+$code = $_SESSION["code_enc"];
+
 include_once "../../../db_conn.php";
 
 // Get the groups cards from database
-if( isset($_GET["code_enc"]) && isset($_GET["status"]) ) {
+if( isset($_GET["status"]) ) {
     if($_GET["status"] === "get_groups") {
         try {
-            $request = "SELECT id_grp, nom_grp, img_grp
-                        FROM groupe ORDER BY id_grp ASC" ;
+            $request = "SELECT id_grp, nom_grp, img_grp FROM groupe
+                        WHERE code_enc=$code ORDER BY id_grp ASC" ;
             $res = $conn->query($request);
             $response = '<div class="col pt-5 pb-3">
                             <div class="card group1 mx-4" onclick="newGroup()">
-                                <img src="../../Uploads/Default_images/add-group.jpg"
+                                <img src="../../Uploads/Images/Project_images/add-group.jpg"
                                      alt="Echec">
                                 <div class="card-body">
                                     <h5 class="card-title">New group</h5>                        
@@ -18,6 +21,7 @@ if( isset($_GET["code_enc"]) && isset($_GET["status"]) ) {
                             </div>
                         </div>';
             while($data = $res->fetch()) {
+                $img = "../../Uploads/Images/Groups_images/" . $data["img_grp"];
                 $response .= '<div class="col pt-5">
                                 <div class="card group1 mx-4 position-relative"
                                      data-id="' . $data["id_grp"] . '" 
@@ -33,7 +37,7 @@ if( isset($_GET["code_enc"]) && isset($_GET["status"]) ) {
                                             <li data-id="' . $data["id_grp"] . '"
                                                 onclick="">
                                                 <i class="fa-regular fa-pen-to-square"></i>
-                                                Edite group
+                                                Edit group
                                             </li>
                                             <li data-id="' . $data["id_grp"] . '"
                                                 onclick="deleteGroup(this)">
@@ -42,7 +46,7 @@ if( isset($_GET["code_enc"]) && isset($_GET["status"]) ) {
                                             </li>
                                         </ul>
                                     </div>
-                                    <img src="../../Uploads/Default_images/' . $data["img_grp"] . '"
+                                    <img src="' . $img . '"
                                          alt="Echec">
                                     <div class="card-body">
                                         <h5 class="card-title">' . $data["nom_grp"] . '</h5>
@@ -59,7 +63,7 @@ if( isset($_GET["code_enc"]) && isset($_GET["status"]) ) {
 }
 
 // delete group from the database
-if( isset($_POST["code_enc"]) && isset($_POST["idGroup"]) && isset($_POST["status"]) ) {
+if( isset($_POST["idGroup"]) && isset($_POST["status"]) ) {
     if( $_POST["status"] === "delete" ) {
         try {
             $id = $_POST["idGroup"];

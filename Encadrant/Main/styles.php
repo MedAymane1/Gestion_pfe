@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="../../bootstrap.min.css">
 <link rel="stylesheet" href="main.css">
 <link rel="stylesheet" href="../Groups/css/groups.css">
-<link rel="stylesheet" href="../Groups/css/new_group.css">
+<link rel="stylesheet" href="../Groups/css/new_group1.css">
 <link rel="stylesheet" href="../Profile/profile.css">
 <link rel="stylesheet" href="../Messages/css/messages.css">
 <link rel="stylesheet" href="../Calendar/calendar.css">
@@ -13,3 +13,4 @@
 
 <script src="https://kit.fontawesome.com/fcac600c4b.js"
         crossorigin="anonymous"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>

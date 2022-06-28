@@ -21,9 +21,7 @@ function newGroup() {
 function getStudents() {
   let stu = document.getElementById("list-etd");
   let xhr = new XMLHttpRequest();
-  xhr.open("GET",
-           "../Groups/php/new_group_back.php?code_enc=123456&status=get_students",
-           true);
+  xhr.open("GET", "../Groups/php/new_group_back.php?status=get_students", true);
   xhr.onload = () => {
     if (xhr.readyState === XMLHttpRequest.DONE) {
       if (xhr.status === 200) {
@@ -69,7 +67,6 @@ function selectMember() {
     checkbox.addEventListener("change", function () {
       enabledMembers = Array.from(checkboxes) // Convert checkboxes to an array to use filter and map.
         .filter((i) => i.checked); // Use Array.filter to remove unchecked checkboxes.
-      //.map((i) => i.value); Use Array.map to extract only the checkbox values from the array of objects.
 
       let n = 0;
       div.innerHTML = "";

@@ -1,11 +1,14 @@
 <?php
 
+session_start();
+$id = $_SESSION["code_enc"];
+
 include_once "../../db_conn.php";
 
 //select list items from the database
-if( isset($_GET["code_enc"]) ) {
+if( isset($_GET["status"]) ) {
     try {
-        $request = "SELECT * FROM  suggestion WHERE code_enc = 65478924";
+        $request = "SELECT * FROM  suggestion WHERE code_enc = $id";
         $res = $conn->query($request);
         $response = "";
         while($data = $res->fetch()) {
@@ -26,13 +29,11 @@ if( isset($_GET["code_enc"]) ) {
 }
 
 // Insert new list item into the database
-if( isset($_POST["codeEnc"]) && isset($_POST["suggText"]) ) {
+if( isset($_POST["suggText"]) ) {
     try {
-        $code = $_POST["codeEnc"];
         $text = $_POST["suggText"];
-        $request = "INSERT INTO suggestion(text_sugg, code_enc) VALUE ('$text', $code)";
-        $response = $conn->exec($request);
-        echo $response;
+        $request = "INSERT INTO suggestion(text_sugg, code_enc) VALUE ('$text', $id)";
+        $conn->exec($request);
     }
     catch(Exception $e) {
         die("Error: " . $e->getMessage());
@@ -40,13 +41,11 @@ if( isset($_POST["codeEnc"]) && isset($_POST["suggText"]) ) {
 }
 
 // delete a list item the database
-if( isset($_POST["codeEnc"]) && isset($_POST["suggId"]) ) {
+if( isset($_POST["suggId"]) ) {
     try {
-        $code = $_POST["codeEnc"];
-        $id = $_POST["suggId"];
-        $request = "DELETE FROM suggestion WHERE id_sugg=$id AND code_enc=$code";
-        $response = $conn->exec($request);
-        echo $response;
+        $id_sugg = $_POST["suggId"];
+        $request = "DELETE FROM suggestion WHERE id_sugg=$id_sugg AND code_enc=$id";
+        $conn->exec($request);
     }
     catch(Exception $e) {
         die("Error: " . $e->getMessage());

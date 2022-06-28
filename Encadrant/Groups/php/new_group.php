@@ -8,7 +8,7 @@
     <div id="alert-area">
         <!-- show alerts -->
     </div>
-    <form action="" method="post" onsubmit="event.preventDefault()">
+    <form method="post" onsubmit="event.preventDefault()">
         <div class="row mb-3">
             <label for="group-name" class="col-lg-3 form-label">Group name</label>
             <div class="col-lg-9">
