@@ -1,6 +1,6 @@
 <?php 
 if(isset($_GET['group_id']) && isset($_GET['folder_id'])){
-    include_once "../../../db_conn.php";
+    include_once "../../../../db_conn.php";
     $id_grp =$_GET['group_id'];
     $id_folder =$_GET['folder_id'];
 
@@ -8,14 +8,13 @@ if(isset($_GET['group_id']) && isset($_GET['folder_id'])){
         //	folder_id  folder_name folder_path id_grp
         $sql ="SELECT folder_path , folder_name FROM folder_path WHERE id_grp = '$id_grp' AND folder_id = '$id_folder'";
         $reponse = $conn->query($sql);
-        while ($donnees = $reponse->fetch()){
-            
-            $folder_path =$donnees['folder_path'];
+        while ($donnees = $reponse->fetch()){      
+            $folder_path ="../".$donnees['folder_path'];
             $folder_name =$donnees['folder_name'];
            }
-        //    "../../../Uploads/uploadsFolders/3/1656469325"
 
        $rootPath = realpath($folder_path);
+    //    echo $rootPath;
        
        $zip_file ="zip.zip";
        //create a zip file
@@ -63,4 +62,3 @@ if(isset($_GET['group_id']) && isset($_GET['folder_id'])){
          die('Erreur : ' . $e->getMessage());
        }
        }
-?>

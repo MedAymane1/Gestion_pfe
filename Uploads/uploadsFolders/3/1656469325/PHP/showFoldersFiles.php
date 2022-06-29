@@ -10,7 +10,7 @@ if(isset($_SESSION['id_grp']) && $_POST['status']=="folder"){
         $schow=" no folder uploaed yet !!";
 
     }else{
-
+        
         while($donnes = $resulte->fetch()){
             $schow='<div class="folder">
             <div class="folder_name">
@@ -23,7 +23,7 @@ if(isset($_SESSION['id_grp']) && $_POST['status']=="folder"){
                           </a>
                          </div>
                       <div class="button-remove">
-                            <button  data-folder="'.$donnes['folder_id'].'"  onclick="deleteFolderEnc(this)">
+                            <button  data-folder="'.$donnes['folder_id'].'"  onclick="deleteFolder(this)">
                             <i class="fa-solid fa-trash-can"></i>
                             </button>
                       </div>

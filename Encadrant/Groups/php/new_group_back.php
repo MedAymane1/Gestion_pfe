@@ -203,7 +203,7 @@ if( isset($_POST["submit"]) ) {
 
         $conn->beginTransaction();
         $sql1 = "INSERT INTO compte(username, passwd, statut)
-                    VALUES ('$username', '$password', 'Group')";
+                    VALUES ('$username', '$password', 'Groupe')";
         $conn->exec($sql1);
     
         $sql2 = "INSERT INTO groupe(nom_grp, nb_membre, id_compte, code_enc) 

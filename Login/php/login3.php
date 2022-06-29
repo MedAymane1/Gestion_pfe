@@ -25,8 +25,6 @@ if(isset($_POST['username']) &&
         $sql = "SELECT * FROM compte WHERE username='$username'";
         $stmt = $conn->query($sql);
 
-        echo $stmt->rowCount();
-
         if($stmt->rowCount() === 1){
         while ($donnees = $stmt->fetch()){
 

@@ -134,6 +134,13 @@ INSERT INTO suggestion (text_sugg, code_enc) VALUES ('suggestion 1', 65478924),
 
 INSERT INTO liste_enc VALUE (65478924, 'JELLOULI', 'Ismail');
 
-INSERT INTO liste_etd VALUE (18031991, 'p120097758', 'ASSLADDAY', 'Mohamed Ayamne');
+INSERT INTO liste_etd VALUE (18031991, 'p120097758', 'ASSLADDAY', 'Mohamed Ayamne'),
+                            (18032337, 'p120022349', 'AMYN', 'Ali'),
+                            (18032384, 'p120097804', 'OULED TALEB', 'Soulaimane'),
+                            (65432515, 'p864651321', 'MEKAOUI', 'Salim')
+                             (21344131, 'p126843108', 'ALAOUI', 'Mohamed');
+
+
+
 
 */
