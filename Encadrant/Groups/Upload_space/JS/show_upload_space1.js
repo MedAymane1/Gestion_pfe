@@ -32,6 +32,7 @@ function schowFiles(){
   xhr.send(formData);
 }
 
+
 //schow all folders and files groups
 function schowUploadspace(ele){   
  let groups = document.getElementById("container");
@@ -41,6 +42,7 @@ function schowUploadspace(ele){
  uploadSpace.setAttribute("data-status","active")
  id_grp=ele.getAttribute("data-id");
  uploadSpace.setAttribute("data-id",id_grp);
+ showComment();
   schowFolders();
   schowFiles();
 }

@@ -68,7 +68,7 @@ CREATE TABLE file_path(
     new_file_name VARCHAR(255) PRIMARY KEY,
     file_name VARCHAR(255),
     path_file VARCHAR(255),
-    nb_file int AUTO_INCREMENT UNIQUE;
+    nb_file int AUTO_INCREMENT UNIQUE,
     id_grp INT,
     FOREIGN KEY (id_grp) REFERENCES groupe(id_grp) 
     ON DELETE CASCADE ON UPDATE CASCADE
@@ -77,7 +77,7 @@ CREATE TABLE folder_path(
     folder_id INT NOT NULL PRIMARY KEY,
     folder_name VARCHAR(255),
     folder_path VARCHAR(255),
-    nb_folder int AUTO_INCREMENT UNIQUE;
+    nb_folder int AUTO_INCREMENT UNIQUE,
     id_grp INT,
     FOREIGN KEY (id_grp) REFERENCES groupe(id_grp) 
     ON DELETE CASCADE ON UPDATE CASCADE
@@ -96,6 +96,19 @@ CREATE TABLE liste_enc(
     prenom_enc VARCHAR(255) NOT NULL
 );
 
+CREATE TABLE `comments` (
+  `id_comment` int AUTO_INCREMENT NOT NULL PRIMARY KEY ,
+  `comment_title` varchar(255) NOT NULL,
+  `comment_body` mediumtext NOT NULL,
+  `date` date NOT NULL ,
+
+    code_enc INT NOT NULL,
+    FOREIGN KEY (code_enc) REFERENCES encadrant(code_enc)
+    ON DELETE CASCADE ON UPDATE CASCADE,
+    id_grp INT NOT NULL,
+    FOREIGN KEY (id_grp) REFERENCES groupe(id_grp)
+    ON DELETE CASCADE ON UPDATE CASCADE
+    );
 /*
 INSERT INTO compte (username, passwd, statut) VALUES ('groupe1', 'groupe1', 'Group'),
                                                      ('groupe2', 'groupe2', 'Group'),
