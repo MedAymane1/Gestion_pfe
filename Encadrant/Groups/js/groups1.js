@@ -25,10 +25,9 @@ function hideMenu_2(element){
 }
 
 // delete group from the database
-function deleteGroup(id) {
+function deleteGroup(id){
   let idGroup = id.getAttribute("data-id");
   id.parentElement.parentElement.classList.toggle("d_none1");
-  
   let xhr = new XMLHttpRequest();
   xhr.onreadystatechange = () => {
     if (xhr.readyState === XMLHttpRequest.DONE) {

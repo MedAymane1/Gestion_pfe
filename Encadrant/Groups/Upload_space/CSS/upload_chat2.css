@@ -130,7 +130,7 @@
   .space_folder .uploded_folders_space .folder .folder_name p{
     width: 80%;
     position: absolute;
-    left: 62%;
+    left: 75%;
     top: 50%;
     transform: translate(-50%,-50%);
     font-size: 19px;

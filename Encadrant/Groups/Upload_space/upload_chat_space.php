@@ -22,4 +22,4 @@
         <div class="chat_space">
            
         </div>
-        <i class="fa-solid fa-arrow-left-long back_icon1" id="back" onclick ="backtogroups()"></i>
+        <i class="fa-solid fa-arrow-left-long back_icon1" id="back" onclick ="backtgroups()"></i>
