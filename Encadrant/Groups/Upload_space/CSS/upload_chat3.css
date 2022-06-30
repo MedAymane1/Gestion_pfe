@@ -12,7 +12,6 @@
   /* space to schow folder and file */
   .chat_space{
     width: 40%;
-    background: #333;
     height: 82vh;
     margin-top: 1%;
   }
@@ -88,7 +87,8 @@
     text-transform: uppercase;
     color: #fff;
     font-size: 20px;
-    font-weight: 600
+    font-weight: 600;
+    margin-bottom: -4px;
   }
 
 /* class show is a combines between uploded_files_space and uploded_folders_space */
@@ -133,7 +133,7 @@
     left: 75%;
     top: 50%;
     transform: translate(-50%,-50%);
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 700;
     color: #6990F2;
   }
@@ -208,7 +208,7 @@
     color: #39435c!important;
   }
 
-  @media screen and (max-width: 960px){
+  @media screen and (max-width: 930px){
     .contener_uploads{
       height: fit-content;
       flex-direction: column;
@@ -233,9 +233,18 @@
 #back{
   position: absolute;
   top: 0%;
-  /* left: 0%; */
+
+  right: 0%;
   font-size: 34px;
   color: #493939;
 }
-  /* #scr{ */
-    /* overflow-y: scroll!important } */
+  #scr{
+    overflow-y: scroll!important }
+  .fa-edit{
+    cursor: pointer;
+    color: green;
+  }
+  .fa-trash{
+    cursor: pointer;
+    color: red;
+  }

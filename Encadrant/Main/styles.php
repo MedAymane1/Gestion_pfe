@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="../Messages/css/messages1.css">
 <link rel="stylesheet" href="../Calendar/calendar.css">
 <link rel="stylesheet" href="../Suggestions/suggestions1.css">
-<link rel="stylesheet" href="../Groups/Upload_space/CSS/upload_chat2.css">
+<link rel="stylesheet" href="../Groups/Upload_space/CSS/upload_chat3.css">
 
 
 <script src="https://kit.fontawesome.com/fcac600c4b.js"
