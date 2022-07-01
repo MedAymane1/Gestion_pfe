@@ -22,13 +22,14 @@ if( isset($_GET["status"]) ) {
                         </div>';
             while($data = $res->fetch()) {
                 $img = "../../Uploads/Images/Groups_images/" . $data["img_grp"];
-                $response .= '<div class="col pt-5">
+                $response .= '<div class="col pt-5" data>
                                 <div class="card group1 mx-4 position-relative"
                                      data-id="' . $data["id_grp"] . '" 
-                                     onmouseleave="hideMenu_2(this)">
+                                     onmouseleave="hideMenu_2(this)" 
+                                     ondblclick="schowUploadspace(this)">
                                     <span id="menu-btn"
                                           class="menu_btn1"
-                                          onclick="showMenu(this)">
+                                          onmouseover="showMenu(this)">
                                         <i class="fas fa-ellipsis-v"></i>
                                     </span>
                                     <div class="action_menu1 d_none1"

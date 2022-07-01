@@ -13,7 +13,6 @@ if(isset($_GET['group_id']) && isset($_GET['folder_id'])){
             $folder_path =$donnees['folder_path'];
             $folder_name =$donnees['folder_name'];
            }
-        //    "../../../Uploads/uploadsFolders/3/1656469325"
 
        $rootPath = realpath($folder_path);
        
@@ -63,4 +62,3 @@ if(isset($_GET['group_id']) && isset($_GET['folder_id'])){
          die('Erreur : ' . $e->getMessage());
        }
        }
-?>
