@@ -6,7 +6,8 @@
 <link rel="stylesheet" href="main.css">
 <link rel="stylesheet" href="../Groups/css/groups.css">
 <link rel="stylesheet" href="../Groups/css/new_group1.css">
-<link rel="stylesheet" href="../Profile/profile.css">
+<link rel="stylesheet" href="../Profile/css/profile3.css">
+<link rel="stylesheet" href="../Profile/css/password3.css">
 <link rel="stylesheet" href="../Messages/css/messages.css">
 <link rel="stylesheet" href="../Calendar/calendar.css">
 <link rel="stylesheet" href="../Suggestions/suggestions1.css">

@@ -1,9 +1,10 @@
 <script src="../../bootstrap.bundle.min.js"></script>
 <script src="main.js"></script>
-<script src="../Groups/js/groups.js"></script>
-<script src="../Groups/js/new_group.js"></script>
-<script src="../Profile/profile2.js"></script>
+<script src="../Groups/js/groups1.js"></script>
+<script src="../Groups/js/new_group1.js"></script>
+<script src="../Profile/js/profile3.js"></script>
+<script src="../Profile/js/password3.js"></script>
 <script src="../Messages/js/messages.js"></script>
 <script src="../Messages/js/users.js"></script>
 <script src="../Calendar/calendar.js"></script>
-<script src="../Suggestions/suggestions.js"></script>
+<script src="../Suggestions/suggestions1.js"></script>
