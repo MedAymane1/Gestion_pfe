@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="../Groups/css/groups.css">
 <link rel="stylesheet" href="../Groups/css/new_group1.css">
 <link rel="stylesheet" href="../Profile/profile.css">
-<link rel="stylesheet" href="../Messages/css/messages1.css">
+<link rel="stylesheet" href="../Messages/css/messages4.css">
 <link rel="stylesheet" href="../Calendar/calendar.css">
 <link rel="stylesheet" href="../Suggestions/suggestions1.css">
 <link rel="stylesheet" href="../Groups/Upload_space/CSS/upload_chat3.css">
