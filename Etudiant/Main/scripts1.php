@@ -7,3 +7,4 @@
 <!-- box icons -->
 <script src="https://kit.fontawesome.com/598cb99ce4.js" crossorigin="anonymous"></script>
 
+<script src="../comments/comm.js"></script>

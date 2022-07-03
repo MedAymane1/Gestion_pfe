@@ -33,6 +33,7 @@
 		  <div class="mb-3">
 		    <label class="form-label" style="margin-bottom:-4vh; margin-top:0.9vh">Nom</label>
 		    <input type="text" 
+			       style="color:aqua"
 				   placeholder="Nom"
 		           class="form-control"
 		           name="nom_enc"
@@ -42,6 +43,7 @@
 		  <div class="mb-3">
 		    <label class="form-label" style="margin-bottom:-4vh; margin-top:0.9vh">Prenom</label>
 		    <input type="text" 
+			       style="color:aqua"
 			       placeholder="Prenom"
 		           class="form-control"
 		           name="prenom_enc"
@@ -51,6 +53,7 @@
           <div class="mb-3">
 		    <label class="form-label" style="margin-bottom:-4vh; margin-top:0.9vh">Username</label>
 		    <input type="text" 
+			       style="color:aqua"
 			       placeholder="Username"
 		           class="form-control"
 		           name="username"
@@ -60,6 +63,7 @@
 		  <div class="mb-3">
 		    <label class="form-label" style="margin-bottom:-4vh; margin-top:0.9vh">Email</label>
 		    <input type="email" 
+			       style="color:aqua"
 			       placeholder="Email"
 		           class="form-control"
 		           name="email_enc"
@@ -70,6 +74,7 @@
 		  <div class="mb-3">
 		    <label class="form-label" style="margin-bottom:-4vh; margin-top:0.9vh">Code_enc</label>
 		    <input type="text" 
+			       style="color:aqua"
 			       placeholder="Code"
 		           class="form-control"
 		           name="code_enc"
@@ -79,6 +84,7 @@
 		  <div class="mb-3">
 		    <label class="form-label" style="margin-bottom:-4vh; margin-top:0.9vh">Password</label>
 		    <input type="password"
+		           style="color:aqua"
 			       placeholder="Password" 
 		           class="form-control"
 		           name="passwd">

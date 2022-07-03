@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,41 +12,34 @@
     <div class="d-flex justify-content-center align-items-center vh-100">
     	
     	<form class="shadow w-450 p-3" 
-				style=""
-    	      action="php/login3.php" 
-    	      method="post"
-			  style="">
+    	      action="php/login.php" 
+    	      method="post">
 
-    		<h4 class="display-4  fs-1" style="color: #fff;">LOGIN</h4><br>
+    		<h4 class="display-4  fs-1">LOGIN</h4><br>
     		<?php if(isset($_GET['error'])){ ?>
-    		<div class="alert alert-danger" role="alert" >
+    		<div class="alert alert-danger" role="alert">
 			  <?php echo $_GET['error']; ?>
 			</div>
 		    <?php } ?>
 
 		  <div class="mb-3">
-		    <label class="form-label" style="margin-bottom:-4vh; margin-top:0.9vh">User name</label>
-		    <input type="text"
-				   style="color:aqua"
-			       placeholder="User name"
+		    <label class="form-label">Email</label>
+		    <input type="email" 
 		           class="form-control"
-		           name="username"
-		           value="<?php echo (isset($_GET['username']))?$_GET['username']:"" ?>">
+		           name="email"
+		           value="<?php echo (isset($_GET['email']))?$_GET['email']:"" ?>">
 		  </div>
 
 		  <div class="mb-3">
-		    <label class="form-label" style="margin-bottom:-4vh; margin-top:0.9vh">Password</label>
+		    <label class="form-label">Password</label>
 		    <input type="password" 
-			       style="color:aqua"
-			       placeholder="Password"
 		           class="form-control"
 		           name="passwd">
 		  </div>
 		  
 		  <button type="submit" class="btn btn-primary">Login</button>
-		  <a href="index.php" class="link-secondary" style="color:white; margin-left:1.9vh">Sign Up</a>
+		  <a href="index.php" class="link-secondary">Sign Up</a>
 		</form>
     </div>
 </body>
 </html>
-
