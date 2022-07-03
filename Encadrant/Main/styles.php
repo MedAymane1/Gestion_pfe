@@ -6,12 +6,17 @@
 <link rel="stylesheet" href="main.css">
 <link rel="stylesheet" href="../Groups/css/groups.css">
 <link rel="stylesheet" href="../Groups/css/new_group1.css">
+<<<<<<< HEAD
 <link rel="stylesheet" href="../Profile/profile.css">
 <link rel="stylesheet" href="../Messages/css/messages4.css">
+=======
+<link rel="stylesheet" href="../Profile/css/profile3.css">
+<link rel="stylesheet" href="../Profile/css/password3.css">
+<link rel="stylesheet" href="../Messages/css/messages.css">
+>>>>>>> 17514a6b0865852ecf1bbee041313b6f6769bced
 <link rel="stylesheet" href="../Calendar/calendar.css">
 <link rel="stylesheet" href="../Suggestions/suggestions1.css">
 <link rel="stylesheet" href="../Groups/Upload_space/CSS/upload_chat3.css">
-
 
 <script src="https://kit.fontawesome.com/fcac600c4b.js"
         crossorigin="anonymous"></script>

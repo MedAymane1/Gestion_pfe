@@ -4,11 +4,17 @@
 <script src="../Groups/js/new_group.js"></script>
 <script src="../Groups/Upload_space/JS/show_upload_space1.js"></script>
 <script src="../Groups/Upload_space/JS/deleteFolder_File.js"></script>
+<<<<<<< HEAD
 <script src="../Profile/profile2.js"></script>
 <script src="../Messages/js/messages_front.js"></script>
 <script src="../Messages/js/groupsList2.js"></script>
 <script src="../Messages/js/chats3.js"></script>
+=======
+<script src="../Profile/js/profile3.js"></script>
+<script src="../Profile/js/password3.js"></script>
+<script src="../Messages/js/messages1.js"></script>
+<script src="../Messages/js/users.js"></script>
+>>>>>>> 17514a6b0865852ecf1bbee041313b6f6769bced
 <script src="../Calendar/calendar.js"></script>
 <script src="../Suggestions/suggestions.js"></script>
 <script src="../Groups/Upload_space/JS/postComment1.js"></script>
-
