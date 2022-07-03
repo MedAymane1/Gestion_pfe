@@ -1,0 +1,103 @@
+.show_input_file1 {
+    color: #6c757d;
+    cursor: pointer;
+}
+
+.show_input_file1:hover {
+    color: #0d6efd;
+    font-size: 16.5px;
+    text-decoration: underline;
+}
+
+/* 
+.file_label1 {
+    background-color: #0d6efd;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 30px;
+    height: 30px;
+    padding: 20px 20px;
+    cursor: pointer;
+    transition: all ease-out 200ms;
+}
+ */
+
+.table_box1 {
+    overflow: auto;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    border: 1px solid rgba(132, 139, 200, 0.18);
+    border-radius: 1.5rem;
+}
+
+.table_box1 table {
+    margin: 0;
+}
+
+.search_etd1 {
+    background-image: url("../../Uploads/Images/Project_images/search.png");
+    background-position: 0.5rem 0.5rem;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 100%;
+    padding: 0.5rem 1.25rem 0.5rem 2.5rem;
+    margin-bottom: 0.5rem;
+    border: none;
+    border-radius: 10px;
+    outline-color: rgba(132, 139, 200, 0.18);
+}
+
+.table_box1 table th,
+.table_box1 table td {
+    width: 22%;
+}
+
+.action1 {
+    width: 12%;
+    text-align: center;
+}
+
+#data-etd tbody {
+    border-top: none;
+}
+
+.table_box1 table thead, 
+.table_box1 table thead th, 
+.table_box1 table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* .table_box1 table i {
+    cursor: pointer;
+    font-size: 18px;
+    color: red;
+}
+
+.table_box1 table i:hover {
+    font-size: 19px;
+} */
+
+/*--------- Style for add Student -----------*/
+.add_stu_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.label_field {
+    color: #888;
+    font-size: 18px;
+    padding: 10px 0px;
+}
+
+@media screen and (min-width: 992px) {
+    .add_stu_box form {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+.d_none {
+    display: none;
+}

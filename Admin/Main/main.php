@@ -96,16 +96,18 @@ catch(Exception $e) {
 
     <!--Container main start-->
     <main class="height_100">
-        <!-- group space -->
+        <!-- Students list space -->
         <section class="cont active_link" id="list-etd">
             <?php
                 include_once "../List_etd/list_etd.php";
             ?>
         </section>
 
-        <!-- profil space -->
-        <section class="cont unactive_link" id="prfl">
-            
+        <!-- Supervisors list space -->
+        <section class="cont unactive_link" id="list-enc">
+            <?php
+                include_once "";
+            ?>
         </section>
         
         <!-- messages space -->

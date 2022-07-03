@@ -7,6 +7,7 @@ function getGroups() {
     if (xhr.readyState === XMLHttpRequest.DONE) {
       if (xhr.status === 200) {
         document.getElementById("all-groups").innerHTML = xhr.response;
+        // console.log(xhr.response);
       }
     }
   };
@@ -25,7 +26,6 @@ function hideMenu_2(element){
 }
 
 // delete group from the database
-<<<<<<< HEAD
 function deleteGroup(id) {
   swal({
     title: "Are you sure?",
@@ -38,7 +38,6 @@ function deleteGroup(id) {
     if(willDelete) {
       let idGroup = id.getAttribute("data-id");
       id.parentElement.parentElement.classList.add("d_none1");
-      console.log(id.parentElement.parentElement);
       
       let xhr = new XMLHttpRequest();
       xhr.onreadystatechange = () => {
@@ -53,20 +52,4 @@ function deleteGroup(id) {
       xhr.send("idGroup=" + idGroup + "&status=delete");
     }
   });
-=======
-function deleteGroup(id){
-  let idGroup = id.getAttribute("data-id");
-  id.parentElement.parentElement.classList.toggle("d_none1");
-  let xhr = new XMLHttpRequest();
-  xhr.onreadystatechange = () => {
-    if (xhr.readyState === XMLHttpRequest.DONE) {
-      if(xhr.status === 200) {
-        getGroups();
-      }
-    }
-  };
-  xhr.open("POST", "../Groups/php/groups_back.php", true);
-  xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-  xhr.send("idGroup=" + idGroup + "&status=delete");
->>>>>>> 46a9924e318395daca574afc685f3f32714dccfe
 }

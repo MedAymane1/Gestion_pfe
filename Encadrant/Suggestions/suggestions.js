@@ -38,7 +38,7 @@ function newSuggest() {
 // delete a list item the database
 function removeSugg(btnValue) {
   let xhr = new XMLHttpRequest();
-  xhr.onreadystatechange = function () {
+  xhr.onreadystatechange = function() {
     if (xhr.readyState === XMLHttpRequest.DONE) {
       if (xhr.status === 200) {
         // call the function getSuggestions to refresh suggestions list

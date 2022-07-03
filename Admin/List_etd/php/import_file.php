@@ -31,6 +31,7 @@ if( isset($_POST["import"]) ) {
                         }
                     }
                     $conn->commit();
+                    echo "done";
                 }
                 catch(Exception $e) {
                     $conn->rollBack();
@@ -38,19 +39,34 @@ if( isset($_POST["import"]) ) {
                 }
             }
             else {
-                echo "extension not valid";
+                echo '<div class="alert alert-danger alert-dismissable">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <strong>
+                                Cannot upload this type of files !!. Must be an Excel file
+                            </strong>
+                        </div>
+                        <button type="button"
+                                class="btn-close"
+                                data-bs-dismiss="alert"
+                                aria-label="Close">
+                        </button>
+                    </div>
+                  </div>';
             }
         }
         else {
-            echo "empty";
+            echo '<div class="alert alert-danger alert-dismissable">
+                    <div class="d-flex justify-content-between">
+                        <div><strong>Please choose a file !!</strong></div>
+                        <button type="button"
+                                class="btn-close"
+                                data-bs-dismiss="alert"
+                                aria-label="Close">
+                        </button>
+                    </div>
+                  </div>';
         }
     }
-    else {
-        echo "file";
-    }
 }
-else {
-    echo "btn";
-}
-
 ?>

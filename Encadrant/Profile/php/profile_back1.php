@@ -60,10 +60,9 @@ if( isset($_POST["change"]) ) {
                       AND id_compte<>(SELECT id_compte
                                       FROM encadrant
                                       WHERE code_enc=$code)" ;
-            
             $res = $conn->query($query);
             $data = $res->fetch();
-            if ( $data["users"] === 1 ) {
+            if( $data["users"] === 1 ) {
                 echo '<div class="alert alert-danger alert-dismissable">
                             <div class="d-flex justify-content-between">
                                 <div>

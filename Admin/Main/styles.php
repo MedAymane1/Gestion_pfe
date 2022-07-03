@@ -4,7 +4,7 @@
 
 <link rel="stylesheet" href="../../bootstrap.min.css">
 <link rel="stylesheet" href="main.css">
-<link rel="stylesheet" href="../List_etd/list_etd1.css">
+<link rel="stylesheet" href="../List_etd/list_etd4.css">
 
 <script src="https://kit.fontawesome.com/fcac600c4b.js"
         crossorigin="anonymous"></script>

@@ -29,7 +29,7 @@ if( isset($_GET["status"]) ) {
                                      ondblclick="schowUploadspace(this)">
                                     <span id="menu-btn"
                                           class="menu_btn1"
-                                          onmouseover="showMenu(this)">
+                                          onclick="showMenu(this)">
                                         <i class="fas fa-ellipsis-v"></i>
                                     </span>
                                     <div class="action_menu1 d_none1"

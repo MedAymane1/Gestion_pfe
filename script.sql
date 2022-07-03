@@ -147,7 +147,6 @@ INSERT INTO suggestion (text_sugg, code_enc) VALUES ('suggestion 1', 65478924),
                                                     ('suggestion 9', 65478924),
                                                     ('suggestion 10', 65478924)
 
-<<<<<<< HEAD
 INSERT INTO liste_enc VALUES (65478924, 'JELLOULI', 'Ismail'),
                             (12345678, 'TEST', 'Test');
 
@@ -156,18 +155,5 @@ INSERT INTO liste_etd VALUES (18031991, 'p120097758', 'ASSLADDAY', 'Mohamed Ayam
                              (18032384, 'p120097804', 'OULED TALEB', 'Soulaimane'),
                              (65432515, 'p864651321', 'MEKAOUI', 'Salim'),
                              (21344131, 'p126843108', 'ALAOUI', 'Mohamed')
-=======
-INSERT INTO liste_enc VALUE (65478924, 'JELLOULI', 'Ismail');
-INSERT INTO liste_enc VALUE (65478927, 'AMYN', 'Ali');
-
-INSERT INTO liste_etd VALUE (18031991, 'p120097758', 'ASSLADDAY', 'Mohamed Ayamne'),
-                            (18032337, 'p120022349', 'AMYN', 'Ali'),
-                            (18032384, 'p120097804', 'OULED TALEB', 'Soulaimane'),
-                            (65432515, 'p864651321', 'MEKAOUI', 'Salim')
-                             (21344131, 'p126843108', 'ALAOUI', 'Mohamed');
-
-
-
->>>>>>> 46a9924e318395daca574afc685f3f32714dccfe
 
 */
