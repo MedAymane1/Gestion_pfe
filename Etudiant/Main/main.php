@@ -11,7 +11,7 @@
     <?php include_once "styles.php" ?>
 </head>
 
-<?php include "SessionChecks.php" ?>
+<?php include "SessionCheck.php" ?>
 <!-- onload="renderDate()" removed form tag bady  -->
 
 <body id="body-pd" class="bg-light" >

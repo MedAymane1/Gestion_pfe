@@ -20,7 +20,7 @@ try {
     $email_enc = $data["email_enc"];
     $username = $data["username"];
     $passwd = $data["passwd"];
-    $img ="../../Uploads/Images/Supervisors_images/" .  $data["img_enc"];
+    $img ="../../Uploads/Images/Supervisors_images/".$data["img_enc"];
 }
 catch(Exception $e) {
     die("Error: " . $e->getMessage());
@@ -113,7 +113,7 @@ catch(Exception $e) {
         <!-- messages space -->
         <section class="cont message unactive_link" id="msg">
             <?php
-            include_once "../Messages/messages1.php";
+            include_once "../Messages/messages3.php";
             ?>
         </section>
         

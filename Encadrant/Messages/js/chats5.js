@@ -30,6 +30,10 @@ function getTitleChat(id_grp){
 
 
 function getallChats(ele){
+    if( window.innerWidth <= 850){
+        users_list.style.display = "none";
+        chat_area.style.display = "flex";
+    }
     id_grp =ele.getAttribute("data-id_grp");
     getTitleChat(id_grp);
 }
@@ -72,6 +76,7 @@ function ScrolltoBottom(){
 
 //get chats from data base
 setInterval(() => {
+
     if(chatheader.hasAttribute('data-id_grp') === true){
     id_grp= chatheader.getAttribute('data-id_grp');
     let form =new FormData();
