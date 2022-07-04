@@ -76,30 +76,30 @@
     <!--Container main start-->
     <main class="height_100">
         <!-- group space -->
-        <section class="cont active_link" id="grp">
+        <section class="cont active_link" id="groupe">
            <?php include "../Upload_space/upload.php";?>
             
         </section>
 
         <!-- profil space -->
-        <section class="cont unactive_link" id="prfl">
+        <section class="cont unactive_link" id="profile">
             
         </section>
         
         <!-- messages space -->
-        <section class="cont message unactive_link" id="msg">
+        <section class="cont message unactive_link" id="messages">
 
            <?php include "../messages/messages.php";?>
               
         </section>
         
         <!-- calendar space -->
-        <section class="cont unactive_link" id="clndr">
+        <section class="cont unactive_link" id="calendar">
             
         </section>
         
         <!-- suggestions space -->
-        <section class="cont unactive_link" id="sugg">
+        <section class="cont unactive_link" id="suggestions">
             
         </section>
 
