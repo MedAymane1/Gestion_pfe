@@ -17,6 +17,7 @@ function schowFolders(){
 
 //get files from data base
 function schowFiles(){
+
   let file_uploaded_space = document.getElementById("uploded_files_space");
   let uploadSpace = document.getElementById("contener_uploadss");
   let formData = new FormData();
@@ -58,7 +59,7 @@ setInterval(() => {
 
 
 
-function backtogroups(){
+function backtgroups(){
   let groups = document.getElementById("container");
  let uploadSpace = document.getElementById("contener_uploadss");
  groups.classList.toggle("d_none1");

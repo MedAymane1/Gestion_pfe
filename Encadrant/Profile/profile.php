@@ -1,8 +1,4 @@
-<?php
-
-?>
-
-<div class="container py-3">
+<div class="container py-3" id="prfl-box">
     <h1 class="text-primary">Edit Profile</h1>
     <hr>
     <form method="POST" onsubmit="event.preventDefault()">
@@ -18,6 +14,7 @@
                             Change your profile picture
                         </label>
                         <input type="file"
+                               name="image"
                                id="file-image"
                                class="form-control"
                                accept="image/*">
@@ -48,6 +45,7 @@
                     <label for="fname" class="col-md-3 form-label">First name:</label>
                     <div class="col-md-9">
                         <input id="fname"
+                               name="fname"
                                class="form-control"
                                type="text"
                                value="<?php echo $prenom_enc ?>">
@@ -58,6 +56,7 @@
                     <label for="lname" class="col-md-3 form-label">Last name:</label>
                     <div class="col-md-9">
                         <input id="lname"
+                               name="lname"
                                class="form-control"
                                type="text"
                                value="<?php echo $nom_enc ?>">
@@ -65,10 +64,9 @@
                 </div>
 
                 <div class="row mb-3">
-                    <label for="code" class="col-md-3 form-label">Code:</label>
+                    <label class="col-md-3 form-label">Code:</label>
                     <div class="col-md-9">
-                        <input id="code"
-                               class="form-control"
+                        <input class="form-control"
                                type="text"
                                placeholder="<?php echo $code_enc ?>" disabled>
                     </div>
@@ -78,9 +76,10 @@
                     <label for="email" class="col-md-3 form-label">Email:</label>
                     <div class="col-md-9">
                         <input id="email"
-                        class="form-control"
-                        type="email"
-                        value="<?php echo $email_enc ?>">
+                               name="email"
+                               class="form-control"
+                               type="email"
+                               value="<?php echo $email_enc ?>">
                     </div>
                 </div>
 
@@ -88,6 +87,7 @@
                     <label for="userName" class="col-md-3 form-label">User name:</label>
                     <div class="col-md-9">
                         <input id="userName"
+                               name="userName"
                                class="form-control"
                                type="text"
                                value="<?php echo $username ?>">
@@ -95,18 +95,18 @@
                 </div>
 
                 <div class="row mb-3">
-                    <label for="password" class="col-md-3 form-label">Password:</label>
+                    <label class="col-md-3 form-label">Password:</label>
                     <div class="col-md-9">
-                        <input id="password"
-                               class="form-control"
+                        <input class="form-control"
                                type="password"
-                               value="password is crypted">
+                               value="password is crypted" disabled>
                     </div>
                 </div>
 
-                <div class="pt-4 d-flex justify-content-end mb-2">
+                <div class="pt-4 d-flex justify-content-end align-items-center mb-2">
+                    <a class="change_pass2" onclick="toggleToPass()">Change my password</a>
                     <button type="submit"
-                            class="btn btn-primary"
+                            class="btn btn-primary ms-4"
                             value="button"
                             onclick="changeInfos(this.value)">
                         Save changes
@@ -115,4 +115,7 @@
             </div>
         </div>
     </form>
+</div>
+<div id="pass-box" class="pass_box2 d_none2">
+    <!--  -->
 </div>

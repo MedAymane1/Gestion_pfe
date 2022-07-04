@@ -117,6 +117,8 @@ INSERT INTO compte (username, passwd, statut) VALUES ('groupe1', 'groupe1', 'Gro
 
 INSERT INTO compte (username, passwd, statut)
     VALUES ('ismail_J', 'jellouli', 'Supervisor')
+INSERT INTO compte (username, passwd, statut)
+    VALUES ('Ali', 'AMYN', 'Supervisor')
 
 INSERT INTO encadrant (code_enc, nom_enc, prenom_enc, email_enc, id_compte)
     VALUES (65478924, 'JELLOULI', 'Ismail', 'ismail.jellouli@gmail.com', 5)
@@ -145,15 +147,13 @@ INSERT INTO suggestion (text_sugg, code_enc) VALUES ('suggestion 1', 65478924),
                                                     ('suggestion 9', 65478924),
                                                     ('suggestion 10', 65478924)
 
-INSERT INTO liste_enc VALUE (65478924, 'JELLOULI', 'Ismail');
+INSERT INTO liste_enc VALUES (65478924, 'JELLOULI', 'Ismail'),
+                            (12345678, 'TEST', 'Test');
 
-INSERT INTO liste_etd VALUE (18031991, 'p120097758', 'ASSLADDAY', 'Mohamed Ayamne'),
-                            (18032337, 'p120022349', 'AMYN', 'Ali'),
-                            (18032384, 'p120097804', 'OULED TALEB', 'Soulaimane'),
-                            (65432515, 'p864651321', 'MEKAOUI', 'Salim')
-                             (21344131, 'p126843108', 'ALAOUI', 'Mohamed');
-
-
-
+INSERT INTO liste_etd VALUES (18031991, 'p120097758', 'ASSLADDAY', 'Mohamed Ayamne'),
+                             (18032337, 'p120022349', 'AMYN', 'Ali'),
+                             (18032384, 'p120097804', 'OULED TALEB', 'Soulaimane'),
+                             (65432515, 'p864651321', 'MEKAOUI', 'Salim'),
+                             (21344131, 'p126843108', 'ALAOUI', 'Mohamed')
 
 */

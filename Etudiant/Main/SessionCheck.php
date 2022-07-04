@@ -2,7 +2,8 @@
 session_start();
 
 if(!isset($_SESSION['id_compte'])){
-    header("../../Login/login.php");
+    header("Location: ../../Login/login.php");
+    exit(-1);
 }else{
 // test session 
 include_once "../../db_conn.php";
@@ -15,4 +16,5 @@ $donness = $resulte->fetch();
 $_SESSION['id_grp'] = $donness['id_grp'];
 $_SESSION['code_enc'] = $donness['code_enc'];
 }
+
 ?>

@@ -1,5 +1,10 @@
 <?php
 session_start();
+if( !isset($_SESSION['id_compte']) ) {
+    header("Location: ../../Login/logout.php");
+    exit(-1);
+}
+
 include_once "../../db_conn.php";
 
 try {
@@ -109,7 +114,7 @@ catch(Exception $e) {
         <!-- messages space -->
         <section class="cont message unactive_link" id="msg">
             <?php
-            include_once "../Messages/messages.php";
+            include_once "../Messages/messages1.php";
             ?>
         </section>
         

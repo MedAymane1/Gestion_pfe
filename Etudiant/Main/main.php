@@ -88,7 +88,9 @@
         
         <!-- messages space -->
         <section class="cont message unactive_link" id="msg">
-            
+
+           <?php include "../messages/messages.php";?>
+              
         </section>
         
         <!-- calendar space -->

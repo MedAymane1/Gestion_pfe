@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="../../bootstrap.min.css">
 <link rel="stylesheet" href="main.css">
 <link rel="stylesheet" href="../Upload_space/CSS/upload_folder-file.css">
+<link rel="stylesheet" href="../messages/CSS/messeges2.css">
 
 
 

@@ -23,11 +23,10 @@ if( isset($_GET["status"]) ) {
             while($data = $res->fetch()) {
                 $img = "../../Uploads/Images/Groups_images/" . $data["img_grp"];
                 $response .= '<div class="col pt-5" data>
-                
                                 <div class="card group1 mx-4 position-relative"
                                      data-id="' . $data["id_grp"] . '" 
                                      onmouseleave="hideMenu_2(this)" 
-                                     onclick ="schowUploadspace(this)">
+                                     ondblclick="schowUploadspace(this)">
                                     <span id="menu-btn"
                                           class="menu_btn1"
                                           onclick="showMenu(this)">
