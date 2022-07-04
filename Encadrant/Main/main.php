@@ -58,6 +58,7 @@ catch(Exception $e) {
         <nav class="nav">
             <div>
                 <a href="#" class="nav_logo">
+                    <!-- <img src="../../images/logo1.jpg" alt="logo" style="width: 8rem; margin-left: 2.4rem; margin-bottom: -2.2rem;"> -->
                     <i class="fa-solid fa-graduation-cap nav_logo-icon"></i>
                     <!-- <i class="bx bxs-graduation nav_logo-icon"></i>
                     <span class="nav_logo-name">BBBootstrap</span> -->

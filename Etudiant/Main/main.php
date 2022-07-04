@@ -11,7 +11,7 @@
     <?php include_once "styles.php" ?>
 </head>
 
-<?php include "SessionCheck.php" ?>
+<?php include "SessionCheckss.php" ?>
 <!-- onload="renderDate()" removed form tag bady  -->
 
 <body id="body-pd" class="bg-light" >
@@ -38,26 +38,31 @@
                 </a>
 
                 <div class="nav_list">
-                    <a href="#grp" class="nav_link active" title="grp">
+                    <a href="#grp" class="nav_link active" title="groupe">
                         <i class="bx bx-group nav_icon"></i>
                         <span class="nav_name">Groups</span>
                     </a>
-                    <a href="#prfl" class="nav_link" title="prfl">
+                    <a href="#prfl" class="nav_link" title="profile">
                         <i class="bx bx-user nav_icon"></i>
                         <span class="nav_name">Profile</span>
                     </a>
-                    <a href="#msg" class="nav_link" title="msg">
+                    <a href="#msg" class="nav_link" title="messages">
                         <i class="bx bx-conversation nav_icon"></i>
                         <span class="nav_name">Messages</span>
                     </a>
-                    <a href="#clndr" class="nav_link" title="clndr">
+                    <a href="#clndr" class="nav_link" title="calendar">
                         <i class="bx bx-calendar nav_icon"></i>
                         <span class="nav_name">Calendar</span>
                     </a>
-                    <a href="#sugg" class="nav_link" title="sugg">
+                    <a href="#sugg" class="nav_link" title="suggestions">
                         <!-- <i class="bx bxs-briefcase nav_icon"></i> -->
                         <i class="bx bx-briefcase nav_icon" ></i>
                         <span class="nav_name">Suggestions</span>
+                    </a>
+                    <a href="#comm" class="nav_link" title="comments">
+                        <!-- <i class="bx bxs-briefcase nav_icon"></i> -->
+                        <i class="bx bx-comment nav_icon" ></i>
+                        <span class="nav_name">Comments</span>
                     </a>
                 </div>
             </div>
@@ -71,31 +76,36 @@
     <!--Container main start-->
     <main class="height_100">
         <!-- group space -->
-        <section class="cont active_link" id="grp">
+        <section class="cont active_link" id="groupe">
            <?php include "../Upload_space/upload.php";?>
             
         </section>
 
         <!-- profil space -->
-        <section class="cont unactive_link" id="prfl">
+        <section class="cont unactive_link" id="profile">
             
         </section>
         
         <!-- messages space -->
-        <section class="cont message unactive_link" id="msg">
+        <section class="cont message unactive_link" id="messages">
 
-            <?php include "../messages/messages.php"?>
+           <?php include "../messages/messages.php";?>
               
         </section>
         
         <!-- calendar space -->
-        <section class="cont unactive_link" id="clndr">
+        <section class="cont unactive_link" id="calendar">
             
         </section>
         
         <!-- suggestions space -->
-        <section class="cont unactive_link" id="sugg">
+        <section class="cont unactive_link" id="suggestions">
             
+        </section>
+
+        <!-- Comments space -->
+        <section class="cont unactive_link" id="comments">
+            <?php include "../comments/comment.php";?>
         </section>
     </main>
     <!--Container main end-->

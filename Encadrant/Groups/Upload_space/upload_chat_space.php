@@ -19,14 +19,14 @@
             
             </div>
         </div>
-        <div class="chat_space">
+        <div class="chat_space" style=" box-shadow: 1px 1px 3px 3px; background:black; margin-left:10px">
            
 
 
 
 
         <div class="row justify-content-center mb-2" style=" margin-top:-8px;">
-           <div class="col-lg-5 bg-light rounded mt-2" style="width:96%; margin-top:-30px ; height:50vh">
+           <div class="col-lg-5 bg-light rounded mt-2" style="width:95%; margin-top:-30px ; height:47vh">
             <h4 class="text-center p-2">Write your comment!</h4>
             <form  method="POST" id="formComment" class="p-2">
                 <!-- <input type="hidden" name="id_comment" value="<?//= $user_id; ?>"> -->
@@ -52,7 +52,7 @@
 
 
         <div class="row justify-content-center" style=" margin-top:-5px;">
-            <div class="col-lg-5 rounded bg-light p-3 " id="scr" style="width:96%; height:31vh">
+            <div class="col-lg-5 rounded bg-light p-3 " id="scr" style="width:95%; height:34.5vh">
                 
             </div>
         </div>

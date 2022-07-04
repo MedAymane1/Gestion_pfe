@@ -33,6 +33,7 @@
 		  <div class="mb-3">
 		    <label class="form-label" style="margin-bottom:-4vh; margin-top:0.9vh">Apogee</label>
 		    <input type="text" 
+			       style="color:aqua"
 				   placeholder="Apogee"
 		           class="form-control"
 		           name="apogee"
@@ -42,6 +43,7 @@
 		  <div class="mb-3">
 		  <label class="form-label" style="margin-bottom:-4vh; margin-top:0.9vh">CNE</label>
 		    <input type="text" 
+			       style="color:aqua"
 			       placeholder="Cne"
 		           class="form-control"
 		           name="cne"
@@ -52,6 +54,7 @@
 		  <div class="mb-3">
 		    <label class="form-label" style="margin-bottom:-4vh; margin-top:0.9vh">Nom</label>
 		    <input type="text" 
+			       style="color:aqua"
 			       placeholder="Nom"
 		           class="form-control"
 		           name="nom_etd"
@@ -61,6 +64,7 @@
 		  <div class="mb-3">
 		    <label class="form-label" style="margin-bottom:-4vh; margin-top:0.9vh">Prenom</label>
 		    <input type="text" 
+			       style="color:aqua"
 			       placeholder="Prenom"
 		           class="form-control"
 		           name="prenom_etd"
@@ -70,6 +74,7 @@
 		  <div class="mb-3">
 		    <label class="form-label" style="margin-bottom:-4vh; margin-top:0.9vh">Email</label>
 		    <input type="email" 
+			       style="color:aqua"
 				   placeholder="Email"
 		           class="form-control"
 		           name="email_etd"
