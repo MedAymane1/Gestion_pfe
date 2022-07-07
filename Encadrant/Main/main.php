@@ -4,26 +4,27 @@ if( !isset($_SESSION['id_compte']) ) {
     header("Location: ../../Login/logout.php");
     exit(-1);
 }
-
-include_once "../../db_conn.php";
-
-try {
-    $id = $_SESSION["id_compte"];
-    $query = "SELECT * FROM encadrant NATURAL JOIN compte WHERE id_compte=$id";
-    $res = $conn->query($query);
-    $data = $res->fetch();
+else {
+    include_once "../../db_conn.php";
     
-    $code_enc = $_SESSION["code_enc"] = $data["code_enc"];
-    $nom_enc = $data["nom_enc"];
-    $prenom_enc = $data["prenom_enc"];
-    $fullName = $nom_enc . " " . $prenom_enc;
-    $email_enc = $data["email_enc"];
-    $username = $data["username"];
-    $passwd = $data["passwd"];
-    $img ="../../Uploads/Images/Supervisors_images/" .  $data["img_enc"];
-}
-catch(Exception $e) {
-    die("Error: " . $e->getMessage());
+    try {
+        $id = $_SESSION["id_compte"];
+        $query = "SELECT * FROM encadrant NATURAL JOIN compte WHERE id_compte=$id";
+        $res = $conn->query($query);
+        $data = $res->fetch();
+        
+        $code_enc = $_SESSION["code_enc"] = $data["code_enc"];
+        $nom_enc = $data["nom_enc"];
+        $prenom_enc = $data["prenom_enc"];
+        $fullName = $nom_enc . " " . $prenom_enc;
+        $email_enc = $data["email_enc"];
+        $username = $data["username"];
+        $passwd = $data["passwd"];
+        $img ="../../Uploads/Images/Supervisors_images/" .  $data["img_enc"];
+    }
+    catch(Exception $e) {
+        die("Error: " . $e->getMessage());
+    }
 }
 ?>
 

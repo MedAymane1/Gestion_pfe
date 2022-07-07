@@ -66,25 +66,24 @@ catch(Exception $e) {
                 <div class="nav_list">
                     <a class="nav_link active" title="list-etd">
                         <i class="bx bx-group nav_icon"></i>
-                        <span class="nav_name">Groups</span>
+                        <span class="nav_name">Students list</span>
                     </a>
-                    <a class="nav_link" title="prfl">
+                    <a class="nav_link" title="list-enc">
                         <i class="bx bx-user nav_icon"></i>
-                        <span class="nav_name">Profile</span>
+                        <span class="nav_name">Supervisors list</span>
                     </a>
-                    <a class="nav_link" title="msg">
+                    <a class="nav_link" title="accounts">
                         <i class="bx bx-conversation nav_icon"></i>
-                        <span class="nav_name">Messages</span>
+                        <span class="nav_name">Accounts</span>
                     </a>
-                    <a class="nav_link" title="clndr">
+                    <a class="nav_link" title="reg-stu">
                         <i class="bx bx-calendar nav_icon"></i>
                         <span class="nav_name">Calendar</span>
                     </a>
-                    <a class="nav_link" title="sugg">
-                        <!-- <i class="bx bxs-briefcase nav_icon"></i> -->
+                    <!-- <a class="nav_link" title="sugg">
                         <i class="bx bx-briefcase nav_icon" ></i>
                         <span class="nav_name">Suggestions</span>
-                    </a>
+                    </a> -->
                 </div>
             </div>
             <a href="#" class="nav_link">
@@ -99,31 +98,35 @@ catch(Exception $e) {
         <!-- Students list space -->
         <section class="cont active_link" id="list-etd">
             <?php
-                include_once "../List_etd/list_etd.php";
+                include "../List_etd/list_etd.php";
             ?>
         </section>
 
         <!-- Supervisors list space -->
         <section class="cont unactive_link" id="list-enc">
             <?php
-                include_once "";
+                include "../List_enc/list_enc.php";
             ?>
         </section>
         
-        <!-- messages space -->
-        <section class="cont message unactive_link" id="msg">
-            
+        <!-- accounts space -->
+        <section class="cont message unactive_link" id="accounts">
+            <?php
+                include "../Accounts/accounts.php";
+            ?>
         </section>
         
-        <!-- calendar space -->
-        <section class="cont unactive_link" id="clndr">
-            
+        <!-- registered students space -->
+        <section class="cont unactive_link" id="reg-stu">
+            <?php
+                include "../Students/students.php";
+            ?>
         </section>
         
         <!-- suggestions space -->
-        <section class="cont unactive_link" id="sugg">
+        <!-- <section class="cont unactive_link" id="sugg">
             
-        </section>
+        </section> -->
     </main>
     <!--Container main end-->
 

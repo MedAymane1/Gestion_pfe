@@ -1,3 +1,5 @@
+<?php include "SessionChecks.php" ?>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -10,8 +12,6 @@
 
     <?php include_once "styles.php" ?>
 </head>
-
-<?php include "SessionChecks.php" ?>
 <!-- onload="renderDate()" removed form tag bady  -->
 
 <body id="body-pd" class="bg-light" >
@@ -95,7 +95,9 @@
         
         <!-- suggestions space -->
         <section class="cont unactive_link" id="sugg">
-            
+            <?php
+                include "../Suggestions/suggestions.php";
+            ?>
         </section>
     </main>
     <!--Container main end-->
