@@ -29,12 +29,16 @@
 
     
     <!-- chats_space -->
-    <div class="chats_space un_active_chat">
+    <div class="chats_space 
+    
+    
+    
+    ">
         <div class="chats_zoone">
             <div class="wrapper3 chat-zone">
                 <section class="chat-area">
                     <header id="headerChat">
-                        <a href="#" id="arrow-left" class="back-icon"><i class="fa-solid fa-arrow-left"></i></a>
+                        <a href="#" class="back-icon" onclick="backUsers()"><i id="arrow-left" class="fa-solid fa-arrow-left"></i></a>
                         <img src="../../Uploads/Images/Groups_images/group-image.png" alt="">
                         <div class="details">
                             <span>User name</span>

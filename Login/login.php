@@ -28,7 +28,7 @@
 		  <div class="mb-3">
 		    <label class="form-label" style="margin-bottom:-4vh; margin-top:0.9vh">User name</label>
 		    <input type="text"
-					style="color:aqua"
+				   style="color:aqua"
 			       placeholder="User name"
 		           class="form-control"
 		           name="username"
@@ -38,6 +38,7 @@
 		  <div class="mb-3">
 		    <label class="form-label" style="margin-bottom:-4vh; margin-top:0.9vh">Password</label>
 		    <input type="password" 
+			       style="color:aqua"
 			       placeholder="Password"
 		           class="form-control"
 		           name="passwd">

@@ -21,16 +21,18 @@ if(isset($_SESSION['code_enc']) && $_POST['status']="groupslist"){
                  $Result_mesg = $conn->query($sql_mesg); 
                  $donnees_mesg =$Result_mesg->fetch();
 
-                $outgoing = $donnees_mesg['outgoing_msg_id'];
                 if($Result_mesg->rowCount() >0){
-                $result_last_msg =  $donnees_mesg['msg'];
+                $outgoing = $donnees_mesg['outgoing_msg_id'];
+
+                   $result_last_msg =  $donnees_mesg['msg'];
+                  //trimming messageif word more than 28 
+                  (strlen($result_last_msg)>28) ? $msg = substr($result_last_msg,0,28).'....':$msg =$result_last_msg;
+                  // adding you text before msg if login is send msg
+                  ($code_enc == $outgoing) ? $you ="you:  " : $you ="";
+                  $msg=$you.$msg;
                 }else{
-                $result_last_msg = "NO message available";
+                  $msg = "NO message available";
                 }
-                 //trimming messageif word more than 28 
-                 (strlen($result_last_msg)>28) ? $msg = substr($result_last_msg,0,28).'....':$msg =$result_last_msg;
-                // adding you text before msg if login is send msg
-                ($code_enc ==  $outgoing) ? $you ="you :" : $you ="";
 
                 $groups =' <a href="#" data-id_grp='.$donnes['id_grp'].' onclick="getallChats(this)" >
                                 <div class="content">

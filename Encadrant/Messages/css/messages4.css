@@ -305,7 +305,7 @@
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 0px) {
     .continer_all_chat .chats_space{
         display: none;
     }

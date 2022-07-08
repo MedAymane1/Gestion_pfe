@@ -7,9 +7,9 @@
 <script src="../Groups/Upload_space/JS/deleteFolder_File.js"></script>
 <script src="../Groups/Upload_space/JS/postComment1.js"></script>
 
-<script src="../Messages/js/messages_front.js"></script>
-<script src="../Messages/js/groupsList2.js"></script>
-<script src="../Messages/js/chats3.js"></script>
+<script src="../Messages/js/messages_front2.js"></script>
+<script src="../Messages/js/groupsList3.js"></script>
+<script src="../Messages/js/chats5.js"></script>
 
 <script src="../Profile/js/profile3.js"></script>
 <script src="../Profile/js/password3.js"></script>
