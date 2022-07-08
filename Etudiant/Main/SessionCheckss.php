@@ -16,6 +16,9 @@ $resulte = $conn->query($sql_id_groupe);
 $donness = $resulte->fetch();
 $_SESSION['id_grp'] = $donness['id_grp'];
 $_SESSION['code_enc']= $donness['code_enc'];
+$_SESSION['img_grp']=$donness['img_grp'];
+$nom_grp=$donness['nom_grp'];
+$img= "../../Uploads/Images/Groups_images/".$donness['img_grp'];
 
 }
 

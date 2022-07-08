@@ -1,5 +1,5 @@
 <script src="../../bootstrap.bundle.min.js"></script>
-<script src="main1.js"></script>
+<script src="main2.js"></script>
 <script src="../Upload_space/JS/FolderUP4.js"></script>
 <script src="../Upload_space/JS/files2.js"></script>
 <script src="../messages/JS/chat.js"></script>

@@ -4,8 +4,10 @@
 
 <link rel="stylesheet" href="../../bootstrap.min.css">
 <link rel="stylesheet" href="main.css">
-<link rel="stylesheet" href="../Upload_space/CSS/upload_folder-file.css">
+<link rel="stylesheet" href="../Upload_space/CSS/upload_folder-file1.css">
 <link rel="stylesheet" href="../messages/CSS/messeges2.css">
+<link rel="stylesheet" href="../profile/CSS/profile.css">
+<link rel="stylesheet" href="../profile/CSS/password3.css">
 
 
 

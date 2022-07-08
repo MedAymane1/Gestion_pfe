@@ -21,10 +21,10 @@
         </div>
         <div class="d-flex align-items-center">  
             <div class="px-4">
-                <span class="fs-5">User name</span>
+                <span class="fs-5"><?php echo $nom_grp ;?></span>
             </div>
             <div class="header_img">
-                <img src="../../images/hczKIze.jpg" alt="Image Not Found">
+                <img src="<?php echo $img;?>" alt="Image Not Found">
             </div>
         </div>
     </header>
@@ -59,14 +59,14 @@
                         <i class="bx bx-briefcase nav_icon" ></i>
                         <span class="nav_name">Suggestions</span>
                     </a>
-                    <a href="#comm" class="nav_link" title="comments">
+                    <a href="#comm" class="nav_link" title="comments" >
                         <!-- <i class="bx bxs-briefcase nav_icon"></i> -->
                         <i class="bx bx-comment nav_icon" ></i>
                         <span class="nav_name">Comments</span>
                     </a>
                 </div>
             </div>
-            <a href="#" class="nav_link">
+            <a href="#" class="nav_link" >
                 <i class='bx bx-log-out nav_icon'></i>
                 <span class="nav_name">SignOut</span>
             </a>
@@ -83,14 +83,14 @@
 
         <!-- profil space -->
         <section class="cont unactive_link" id="profile">
-            
+            <?php include "../profile/profile.php" ?>
         </section>
         
         <!-- messages space -->
         <section class="cont message unactive_link" id="messages">
 
            <?php include "../messages/messages.php";?>
-              
+            
         </section>
         
         <!-- calendar space -->
