@@ -1,0 +1,83 @@
+.search_reg4 {
+    background-image: url("../../Uploads/Images/Project_images/search.png");
+    background-position: 0.5rem 0.5rem;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 80%;
+    padding: 0.5rem 1.25rem 0.5rem 2.5rem;
+    /* margin: 1rem auto; */
+    border: none;
+    border-radius: 10px;
+    outline-color: rgba(132, 139, 200, 0.18);
+}
+
+.registered_list4 {
+    margin: 0;
+    padding: 0;
+}
+
+.registered_list4 li {
+    /* make the list items unselectable */
+    list-style-type: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.registered4 {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(38, 38, 40, 0.18);
+    border-radius: 10px;
+    margin: 1.5rem 0;
+}
+
+.registered4 img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px 0 0 10px;
+    padding: 1px;
+}
+
+.registered4 .info4 {
+    padding: .5rem 0 0 2rem;
+}
+
+.registered4 .info4 i {
+    padding-right: .5rem;
+    color: #3eda6a;
+}
+
+.registered4 span {
+    font-size: 15px;
+}
+
+.registered4 .title4 {
+    font-weight: 900;
+}
+
+.registered4 .delete3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    border-radius: 8px;
+    width: 45px;
+}
+
+.registered4 .delete3 i {
+    color: red;
+    cursor: pointer;
+}
+
+.registered4 .delete3 i:hover {
+    font-size: 18px;
+}
+
+@media screen and (min-width: 992px) {
+    .registered4 {
+        width: 80%;
+        margin: 1rem auto;
+    }
+}

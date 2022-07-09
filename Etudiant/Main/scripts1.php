@@ -2,7 +2,11 @@
 <script src="main2.js"></script>
 <script src="../Upload_space/JS/FolderUP4.js"></script>
 <script src="../Upload_space/JS/files2.js"></script>
-<script src="../messages/JS/chat.js"></script>
+<script src="../messages/JS/chat1.js"></script>
+<script src="../Suggestions/suggestions.js"></script>
+
+<script src="../profile/JS/password3.js"></script>
+<script src="../profile/JS/profile3.js"></script>
 <!-- sweetalert script -->
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <!-- box icons -->

@@ -12,7 +12,7 @@
 <script src="../Messages/js/chats5.js"></script>
 
 <script src="../Profile/js/profile3.js"></script>
-<script src="../Profile/js/password3.js"></script>
+<script src="../Profile/js/password.js"></script>
 
 <script src="../Calendar/calendar.js"></script>
 

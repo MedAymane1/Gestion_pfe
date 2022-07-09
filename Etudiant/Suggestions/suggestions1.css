@@ -1,0 +1,39 @@
+/* Style the header */
+.header_sugg5 {
+  background-color: #19b3d3;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Remove margins and padding from the list */
+.sugg_list5 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+.sugg_list5 li {
+  position: relative;
+  padding: 12px 45px 12px 40px;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  cursor: pointer;
+
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+.sugg_list5 li:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+/* Darker background-color on hover */
+.sugg_list5 li:hover {
+  background: #ddd;
+}

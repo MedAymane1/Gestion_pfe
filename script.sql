@@ -96,19 +96,20 @@ CREATE TABLE liste_enc(
     prenom_enc VARCHAR(255) NOT NULL
 );
 
-CREATE TABLE `comments` (
-  `id_comment` int AUTO_INCREMENT NOT NULL PRIMARY KEY ,
-  `comment_title` varchar(255) NOT NULL,
-  `comment_body` mediumtext NOT NULL,
-  `date` date NOT NULL ,
+CREATE TABLE comments (
+    id_comment INT AUTO_INCREMENT NOT NULL PRIMARY KEY ,
+    comment_title VARCHAR(255) NOT NULL,
+    comment_body MEDIUMTEXT NOT NULL,
+    date DATE NOT NULL ,
 
     code_enc INT NOT NULL,
+    id_grp INT NOT NULL,
     FOREIGN KEY (code_enc) REFERENCES encadrant(code_enc)
     ON DELETE CASCADE ON UPDATE CASCADE,
-    id_grp INT NOT NULL,
     FOREIGN KEY (id_grp) REFERENCES groupe(id_grp)
     ON DELETE CASCADE ON UPDATE CASCADE
-    );
+);
+
 /*
 INSERT INTO compte (username, passwd, statut) VALUES ('groupe1', 'groupe1', 'Group'),
                                                      ('groupe2', 'groupe2', 'Group'),
@@ -148,7 +149,7 @@ INSERT INTO suggestion (text_sugg, code_enc) VALUES ('suggestion 1', 65478924),
                                                     ('suggestion 10', 65478924)
 
 INSERT INTO liste_enc VALUES (65478924, 'JELLOULI', 'Ismail'),
-                            (12345678, 'TEST', 'Test');
+                             (12345678, 'TEST', 'Test');
 
 INSERT INTO liste_etd VALUES (18031991, 'p120097758', 'ASSLADDAY', 'Mohamed Ayamne'),
                              (18032337, 'p120022349', 'AMYN', 'Ali'),

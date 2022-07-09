@@ -1,0 +1,95 @@
+.search_acc3 {
+    background-image: url("../../Uploads/Images/Project_images/search.png");
+    background-position: 0.5rem 0.5rem;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 80%;
+    padding: 0.5rem 1.25rem 0.5rem 2.5rem;
+    /* margin: 1rem auto; */
+    border: none;
+    border-radius: 10px;
+    outline-color: rgba(132, 139, 200, 0.18);
+}
+
+.accounts_list3 {
+    margin: 0;
+    padding: 0;
+}
+
+.accounts_list3 li {
+    /* make the list items unselectable */
+    list-style-type: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.account3 {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(38, 38, 40, 0.18);
+    border-radius: 10px;
+    margin: 1.5rem 0;
+}
+
+.account3 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px 0 0 10px;
+    padding: 1px;
+}
+
+.account3 .p_info3 {
+    padding: .5rem 0 0 4rem;
+    width: 350px;
+}
+
+.account3 .status3 {
+    display: flex;
+    align-items: center;
+    width: 140px;
+}
+
+.account3 .p_info3 i {
+    padding-right: .5rem;
+    color: #3eda6a;
+}
+
+.account3 .members3 {
+    padding-top: .5rem;
+    width: 250px;
+}
+
+.account3 span {
+    font-size: 15px;
+}
+
+.account3 .title3 {
+    font-weight: 900;
+}
+
+.account3 .delete3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    border-radius: 8px;
+    width: 45px;
+}
+
+.account3 .delete3 i {
+    color: red;
+    cursor: pointer;
+}
+
+.account3 .delete3 i:hover {
+    font-size: 18px;
+}
+
+@media screen and (min-width: 992px) {
+    .account3 {
+        width: 80%;
+        margin: 1rem auto;
+    }
+}

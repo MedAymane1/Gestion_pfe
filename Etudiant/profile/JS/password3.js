@@ -1,4 +1,4 @@
-// Hide the profile space, show change password space
+// Hide the profile space, show change password space 
 function toggleToPass() {
   document.getElementById("prfl-box").classList.toggle("d_none2");
   document.getElementById("pass-box").classList.toggle("d_none2");
@@ -8,7 +8,7 @@ function toggleToPass() {
 // Get the change password form, append it in div#pass-box
 function getPassForm() {
   let xhr = new XMLHttpRequest();
-  xhr.open("GET", "../Profile/php/password.php", true);
+  xhr.open("GET", "../php/password.php", true);
   xhr.onload = () => {
     if (xhr.readyState === XMLHttpRequest.DONE) {
       if (xhr.status === 200) {

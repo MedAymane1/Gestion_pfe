@@ -1,3 +1,5 @@
+<?php include "SessionChecks.php" ?>
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -8,10 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <?php include_once "styles.php" ?>
+    <?php include_once "styles1.php" ?>
 </head>
-
-<?php include "SessionCheckss.php" ?>
 <!-- onload="renderDate()" removed form tag bady  -->
 
 <body id="body-pd" class="bg-light" >
@@ -50,10 +50,10 @@
                         <i class="bx bx-conversation nav_icon"></i>
                         <span class="nav_name">Messages</span>
                     </a>
-                    <a href="#clndr" class="nav_link" title="calendar">
+                    <!-- <a href="#clndr" class="nav_link" title="calendar">
                         <i class="bx bx-calendar nav_icon"></i>
                         <span class="nav_name">Calendar</span>
-                    </a>
+                    </a> -->
                     <a href="#sugg" class="nav_link" title="suggestions">
                         <!-- <i class="bx bxs-briefcase nav_icon"></i> -->
                         <i class="bx bx-briefcase nav_icon" ></i>
@@ -94,13 +94,15 @@
         </section>
         
         <!-- calendar space -->
-        <section class="cont unactive_link" id="calendar">
+        <!-- <section class="cont unactive_link" id="calendar">
             
-        </section>
+        </section> -->
         
         <!-- suggestions space -->
         <section class="cont unactive_link" id="suggestions">
-            
+            <?php
+                include "../Suggestions/suggestions.php";
+            ?>
         </section>
 
         <!-- Comments space -->

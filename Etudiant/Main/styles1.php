@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="../messages/CSS/messeges2.css">
 <link rel="stylesheet" href="../profile/CSS/profile.css">
 <link rel="stylesheet" href="../profile/CSS/password3.css">
+<link rel="stylesheet" href="../Suggestions/suggestions1.css">
 
 
 

@@ -19,7 +19,6 @@ function getTitleChat(){
         if(xhr.readyState === XMLHttpRequest.DONE){
             if(xhr.status === 200){
                 let data = xhr.response;
-                console.log(data);
                 chatheader.innerHTML =data;
                 // chatheader.setAttribute("data-id_grp",id_grp)
            }
@@ -68,7 +67,6 @@ setInterval(() => {
         if(xhr.readyState === XMLHttpRequest.DONE){
             if(xhr.status === 200){
                 let data = xhr.response;
-                console.log(data);
                 chatbox.innerHTML=data;
                 ScrolltoBottom();
            }

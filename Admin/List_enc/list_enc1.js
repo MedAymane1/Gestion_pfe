@@ -1,13 +1,13 @@
 // Get the students list by XMLHttpRequest and append it into the table
-document.onload = getStudents();
-function getStudents() {
-  let stu = document.getElementById("data-etd");
+document.onload = getSupervisors();
+function getSupervisors() {
+  let sup = document.getElementById("data-enc");
   let xhr = new XMLHttpRequest();
-  xhr.open("GET", "../List_etd/php/list_etd_back.php?status=list_etd", true);
+  xhr.open("GET", "../List_enc/php/list_enc_back.php?status=list_enc", true);
   xhr.onload = () => {
     if (xhr.readyState === XMLHttpRequest.DONE) {
       if (xhr.status === 200) {
-        stu.innerHTML = xhr.response;
+        sup.innerHTML = xhr.response;
       }
     }
   };
@@ -15,11 +15,11 @@ function getStudents() {
 }
 
 //
-function searchStudent() {
+function searchSupervisor() {
   // Declare variables
   let input, table, tr, td, i, txtValue;
-  input = document.getElementById("search-etd");
-  table = document.getElementById("data-etd");
+  input = document.getElementById("search-enc");
+  table = document.getElementById("data-enc");
   tr = table.getElementsByTagName("tr");
 
   // Loop through all table rows, and hide those who don't match the search query
@@ -37,45 +37,46 @@ function searchStudent() {
 }
 
 // Show the choose file button
-function getInputFile() {
-  document.getElementById("import-file-box").classList.toggle("d_none");
+function getInputFileEnc() {
+  document.getElementById("import-file-box1").classList.toggle("d_none");
 }
 
 // 
-function importFile(btn) {
-  let form = document.querySelector("#import-file-box form");
+function importFileEnc(btn) {
+  let form = document.querySelector("#import-file-box1 form");
   let formData = new FormData(form);
   formData.append("import", btn);
   let xhr = new XMLHttpRequest();
 
-  xhr.open("POST", "../List_etd/php/import_file.php", true);
-  xhr.onload = () => {
-      if(xhr.readyState === XMLHttpRequest.DONE) {
-          if(xhr.status === 200) {
-            if(xhr.response === "done") {
-              getStudents();
-            }
-            else {
-              document.querySelector("form .alert_area2").innerHTML = xhr.response;
-            }
-          }
+  xhr.open("POST", "../List_enc/php/import_list_enc.php", true);
+  xhr.onload = ()=> {
+    if(xhr.readyState === XMLHttpRequest.DONE) {
+      if(xhr.status === 200) {
+        if(xhr.response === "done") {
+          getSupervisors();
+        }
+        else {
+          let alert = document.querySelector("#import-file-box1 form .alert_area2");
+          alert.innerHTML = xhr.response;
+        }
       }
+    }
   }
   xhr.send(formData);
 }
 
 // 
-function getAddStudent() {
-  document.getElementById("list-box").classList.toggle("d_none");
-  let newStd = document.getElementById("add-stu-box");
+function getAddSupervisor() {
+  let newSup = document.getElementById("add-sup-box");
   let xhr = new XMLHttpRequest();
 
-  xhr.open("GET", "../List_etd/php/add_etd.php", true);
+  xhr.open("GET", "../List_enc/php/add_enc.php", true);
   xhr.onload = () => {
     if (xhr.readyState === XMLHttpRequest.DONE) {
       if (xhr.status === 200) {
-        newStd.innerHTML = xhr.response;
-        newStd.classList.toggle("d_none");
+        newSup.innerHTML = xhr.response;
+        document.getElementById("list-enc-box").classList.toggle("d_none");
+        newSup.classList.toggle("d_none");
       }
     }
   };
@@ -83,26 +84,26 @@ function getAddStudent() {
 }
 
 // 
-function cancelAdd() {
-  document.getElementById("add-stu-box").classList.toggle("d_none");
-  document.getElementById("list-box").classList.toggle("d_none");
+function cancelAddSup() {
+  document.getElementById("add-sup-box").classList.toggle("d_none");
+  document.getElementById("list-enc-box").classList.toggle("d_none");
 }
 
 // 
-function addStudent(btn) {
-  let alert = document.querySelector("form #alert_area_etd");
-  let data = document.querySelector("#add-stu-box form");
+function addSupervisor(btn) {
+  let alert = document.querySelector("form #alert_area_enc");
+  let data = document.querySelector("#add-sup-box form");
   let formData = new FormData(data);
-  formData.append("addEtd", btn);
+  formData.append("addEnc", btn);
   
   let xhr = new XMLHttpRequest();
-  xhr.open("POST", "../List_etd/php/list_etd_back.php", true);
+  xhr.open("POST", "../List_enc/php/list_enc_back.php", true);
   xhr.onload = () => {
     if(xhr.readyState === XMLHttpRequest.DONE) {
       if(xhr.status === 200) {
         if(xhr.response === "done") {
-          cancelAdd();
-          getStudents();
+          cancelAddSup();
+          getSupervisors();
           swal("Done!", "Student has been added to the list successfully", "success");
         }
         else {
@@ -116,23 +117,23 @@ function addStudent(btn) {
 }
 
 // 
-function deleteEtd(apogee) {
+function deleteSup(btn) {
+  // console.log(btn.getAttribute("data-code"));
   let xhr = new XMLHttpRequest();
-  xhr.open("POST", "../List_etd/php/list_etd_back.php", true);
+  xhr.open("POST", "../List_enc/php/list_enc_back.php", true);
   xhr.onload = ()=> {
     if(xhr.readyState === XMLHttpRequest.DONE) {
       if(xhr.status === 200) {
-        console.log(xhr.response);
-        getStudents();
+        getSupervisors();
       }
     }
   }
   xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-  xhr.send("deleteEtd=" + apogee);
+  xhr.send("deleteEnc=" + btn.getAttribute("data-code"));
 }
 
 // 
-function deleteAll() {
+function deleteAllSups() {
   swal({
     title: "Are you sure?",
     icon: "warning",
@@ -142,16 +143,16 @@ function deleteAll() {
   .then((willDelete) => {
     if(willDelete) {
       let xhr = new XMLHttpRequest();
-      xhr.open("POST", "../List_etd/php/list_etd_back.php", true);
+      xhr.open("POST", "../List_enc/php/list_enc_back.php", true);
       xhr.onload = ()=> {
         if(xhr.readyState === XMLHttpRequest.DONE) {
           if(xhr.status === 200) {
-            getStudents();
+            getSupervisors();
           }
         }
       }
       xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-      xhr.send("deleteAll=destroy");
+      xhr.send("deleteAllSups=destroy");
     }
   });
 }
