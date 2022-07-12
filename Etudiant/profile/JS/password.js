@@ -8,7 +8,7 @@ function toggleToPass() {
 // Get the change password form, append it in div#pass-box
 function getPassForm() {
   let xhr = new XMLHttpRequest();
-  xhr.open("GET", "../php/password.php", true);
+  xhr.open("GET", "../profile/php/password.php", true);
   xhr.onload = () => {
     if (xhr.readyState === XMLHttpRequest.DONE) {
       if (xhr.status === 200) {

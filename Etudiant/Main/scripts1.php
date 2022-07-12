@@ -5,8 +5,8 @@
 <script src="../messages/JS/chat1.js"></script>
 <script src="../Suggestions/suggestions.js"></script>
 
-<script src="../profile/JS/password3.js"></script>
-<script src="../profile/JS/profile3.js"></script>
+<script src="../profile/JS/password.js"></script>
+<script src="../profile/JS/profile.js"></script>
 <!-- sweetalert script -->
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <!-- box icons -->
