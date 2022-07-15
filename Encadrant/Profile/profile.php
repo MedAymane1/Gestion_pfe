@@ -7,6 +7,7 @@
             <div class="col-lg-3 col-md-5 pt-4 mb-3">
                 <div class="text-center">
                     <img src="<?php echo $img ?>"
+                         id="profile-img" 
                          class="profil_img2"
                          alt="Failed to load image">
                     <div>

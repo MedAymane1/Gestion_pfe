@@ -48,10 +48,10 @@ else {
         </div>
         <div class="d-flex align-items-center">  
             <div class="px-4">
-                <span class="fs-5"><?php echo $fullName; ?></span>
+                <span id="user-full-name" class="fs-5"><?php echo $fullName; ?></span>
             </div>
             <div class="header_img">
-                <img src="<?php echo $img; ?>" alt="Image Not Found">
+                <img src="<?php echo $img; ?>" id="header-img" alt="Image Not Found">
             </div>
         </div>
     </header>
