@@ -1,13 +1,12 @@
 <div class="container py-3" id="prfl-box">
     <h1 class="text-primary">Edit Profile</h1>
     <hr>
-    <form method="POST" onsubmit="event.preventDefault()">
+    <form id="prfl-grp" method="POST" onsubmit="event.preventDefault()">
         <div class="row justify-content-center">
             <!-- left column -->
             <div class="col-lg-3 col-md-5 pt-4 mb-3">
                 <div class="text-center">
                     <img src="<?php echo $img ?>"
-                         id="profile-img" 
                          class="profil_img2"
                          alt="Failed to load image">
                     <div>
@@ -40,52 +39,23 @@
                         </div>
                     </div>
                 </div>
-                <h3 class="py-2">Personal info</h3>
+                <h3 class="py-2">Group info</h3>
 
                 <div class="row mb-3">
-                    <label for="fname" class="col-md-3 form-label">First name:</label>
+                    <label for="nom_grp" class="col-md-3 form-label">Group name:</label>
                     <div class="col-md-9">
                         <input id="fname"
-                               name="fname"
+                               name="nom_grp"
                                class="form-control"
                                type="text"
-                               value="<?php echo $prenom_enc ?>">
+                               value="<?php echo $nom_grp ?>">
                     </div>
                 </div>
 
-                <div class="row mb-3">
-                    <label for="lname" class="col-md-3 form-label">Last name:</label>
-                    <div class="col-md-9">
-                        <input id="lname"
-                               name="lname"
-                               class="form-control"
-                               type="text"
-                               value="<?php echo $nom_enc ?>">
-                    </div>
-                </div>
+               
 
                 <div class="row mb-3">
-                    <label class="col-md-3 form-label">Code:</label>
-                    <div class="col-md-9">
-                        <input class="form-control"
-                               type="text"
-                               placeholder="<?php echo $code_enc ?>" disabled>
-                    </div>
-                </div>
-
-                <div class="row mb-3">
-                    <label for="email" class="col-md-3 form-label">Email:</label>
-                    <div class="col-md-9">
-                        <input id="email"
-                               name="email"
-                               class="form-control"
-                               type="email"
-                               value="<?php echo $email_enc ?>">
-                    </div>
-                </div>
-
-                <div class="row mb-3">
-                    <label for="userName" class="col-md-3 form-label">User name:</label>
+                    <label for="userName" class="col-md-3 form-label">Group User name:</label>
                     <div class="col-md-9">
                         <input id="userName"
                                name="userName"
@@ -116,7 +86,27 @@
             </div>
         </div>
     </form>
+
+<!-- members group -->
+
+    <h1 class="text-primary">groupe members</h1>
+       <hr>
+
+    <div>
+    <!-- card group --> 
+    <div id="members" class="row gy-3 my-3 " style="grid-column-gap: 4rem;">
+        <!--  -->
+       
+    
+
+  </div>
 </div>
+
+
+
+    <!-- end  -->
+</div>
+
 <div id="pass-box" class="pass_box2 d_none2">
     <!--  -->
     

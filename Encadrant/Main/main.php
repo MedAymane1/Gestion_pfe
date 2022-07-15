@@ -102,6 +102,7 @@ else {
         <section class="cont active_link" id="grp">
             <?php
             include_once "../Groups/groups.php";
+
             ?>
         </section>
 

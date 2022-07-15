@@ -21,7 +21,7 @@ function changeInfos(btn) {
   formData.append("change", btn);
 
   let xhr = new XMLHttpRequest();
-  xhr.open("POST", "../Profile/php/profile_back1.php", true);
+  xhr.open("POST", "../Profile/php/profile_back.php", true);
   xhr.onload = () => {
     if (xhr.readyState === XMLHttpRequest.DONE) {
       if (xhr.status === 200) {

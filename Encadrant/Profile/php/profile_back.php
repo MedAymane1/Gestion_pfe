@@ -4,7 +4,7 @@ $code = $_SESSION["code_enc"];
 
 include_once "../../../db_conn.php";
 
-// 
+// Change the profile info
 if( isset($_POST["change"]) ) {
     // Check that fname is valide
     if( empty($_POST["fname"]) ) {
