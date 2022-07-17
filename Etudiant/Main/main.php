@@ -35,7 +35,7 @@
                     <i class="fa-solid fa-graduation-cap nav_logo-icon"></i>
                     <!-- <i class="bx bxs-graduation nav_logo-icon"></i>
                     <span class="nav_logo-name">BBBootstrap</span> -->
-                </a>
+                 </a>
 
                 <div class="nav_list">
                     <a href="#grp" class="nav_link active" title="groupe">

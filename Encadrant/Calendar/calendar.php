@@ -1,7 +1,7 @@
 <div class="container">
     <div class="wrapper">
         <div class="calendar">
-            <div class="month">
+            <div class="month" style="width:100%;">
                 <div class="prev" onclick="moveDate('prev')">
                     <span>&#10094;</span>
                 </div>

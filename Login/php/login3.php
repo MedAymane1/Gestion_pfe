@@ -13,11 +13,11 @@ if(isset($_POST['username']) &&
     
     if(empty($username)){
     	$em = "User name is required";
-    	header("Location: ../login.php?error=$em&$data");
+    	header("Location: ../index.php?error=$em&$data");
 	    exit;
     }else if(empty($passwd)){
     	$em = "Password is required";
-    	header("Location: ../login.php?error=$em&$data");
+    	header("Location: ../index.php?error=$em&$data");
 	    exit;
 
     }else{
@@ -46,7 +46,11 @@ if(isset($_POST['username']) &&
                  
                  exit;
                }
-           }  
+           }else{
+            $em = "Incorect User name or password";
+            header("Location: ../index.php?error=$em&$data");
+            exit;
+           }
             //admin with out hash
             if($passwd == $donnees['passwd']){ 
             if($donnees['statut'] == "Admin"){
@@ -58,11 +62,16 @@ if(isset($_POST['username']) &&
                  exit;
                 }
 
-            }}
+            }else{
+                $em = "Incorect User name or password";
+                header("Location: ../index.php?error=$em&$data");
+                exit;
+               }
+        }
         
     }else {
         $em = "Incorect User name or password";
-        header("Location: ../login.php?error=$em&$data");
+        header("Location: ../index.php?error=$em&$data");
         exit;
      }
     }
