@@ -84,6 +84,7 @@
         <!-- profil space -->
         <section class="cont unactive_link" id="profile">
             <?php include "../profile/profile.php" ?>
+
         </section>
         
         <!-- messages space -->

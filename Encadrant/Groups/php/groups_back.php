@@ -36,7 +36,7 @@ if( isset($_GET["status"]) ) {
                                          onmouseleave="hideMenu(this)">
                                         <ul>
                                             <li data-id="' . $data["id_grp"] . '"
-                                                onclick="">
+                                                onclick="editGroup(this)">
                                                 <i class="fa-regular fa-pen-to-square"></i>
                                                 Edit group
                                             </li>

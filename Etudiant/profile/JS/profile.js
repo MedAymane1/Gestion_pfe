@@ -16,12 +16,13 @@ file.addEventListener("change", function () {
 // Update profile info
 function changeInfos(btn) {
   let alert = document.querySelector(".alert_area2");
-  let data = document.querySelector("#prfl form");
+  let data = document.getElementById("prfl-grp");
   let formData = new FormData(data);
   formData.append("change", btn);
 
   let xhr = new XMLHttpRequest();
-  xhr.open("POST", "../Profile/php/profile_back1.php", true);
+// ../profile/php/password.php
+  xhr.open("POST", "../profile/php/profile_back1.php", true);
   xhr.onload = () => {
     if (xhr.readyState === XMLHttpRequest.DONE) {
       if (xhr.status === 200) {
@@ -39,6 +40,32 @@ function changeInfos(btn) {
   };
   xhr.send(formData);
 }
+
+//schow mambers 
+function members(){
+  let xhr = new XMLHttpRequest();
+  xhr.open("GET", "../profile/php/members.php", true);
+  xhr.onload = () => {
+    if (xhr.readyState === XMLHttpRequest.DONE) {
+      if (xhr.status === 200) {
+        document.getElementById("members").innerHTML = xhr.response;
+      }
+    }
+  };
+  xhr.send();
+}
+members();
+
+
+
+
+
+
+
+
+
+
+
 
 /* 
 function changeInfos() {

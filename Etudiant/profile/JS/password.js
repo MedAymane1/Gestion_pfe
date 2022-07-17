@@ -1,28 +1,23 @@
-// Get the change password form, append it in div#pass-box
-function getPassForm() {
-  let xhr = new XMLHttpRequest();
-  xhr.open("GET", "../Profile/php/password.php", true);
-  xhr.onload = () => {
-    if (xhr.readyState === XMLHttpRequest.DONE) {
-      if (xhr.status === 200) {
-        data=xhr.response;
-        console.log(data);  
-        document.getElementById("pass-box").innerHTML = xhr.response;
-      }
-    }
-  };
-  xhr.send();
-}
-
-
-// Hide the profile space, show change password space
+// Hide the profile space, show change password space 
 function toggleToPass() {
   document.getElementById("prfl-box").classList.toggle("d_none2");
   document.getElementById("pass-box").classList.toggle("d_none2");
   getPassForm();
 }
 
-
+// Get the change password form, append it in div#pass-box
+function getPassForm() {
+  let xhr = new XMLHttpRequest();
+  xhr.open("GET", "../profile/php/password.php", true);
+  xhr.onload = () => {
+    if (xhr.readyState === XMLHttpRequest.DONE) {
+      if (xhr.status === 200) {
+        document.getElementById("pass-box").innerHTML = xhr.response;
+      }
+    }
+  };
+  xhr.send();
+}
 
 //
 function cancelChange() {

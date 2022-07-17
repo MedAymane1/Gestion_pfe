@@ -1,0 +1,72 @@
+.group_img1 {
+    padding: .25rem;
+    width: 250px;
+    height: 250px;
+    border: 1px solid #dee2e6;
+    border-radius: 50%;
+}
+
+.members_box1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.member1 {
+    position: relative;
+    background: white;
+    width: 220px;
+    height: 245px;
+    padding: 1.5rem 1rem;
+    margin: 0 1rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
+}
+
+.member1 img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.member1 i {
+    font-size: 16px;
+    color: #0d6efd;
+    padding-right: .75rem;
+}
+
+.member1 .text_muted1 {
+    color: #6c757d !important;
+    font-size: 14px;
+}
+
+.member1 .remove1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    color: red;
+    padding: .75rem;
+    cursor: pointer;
+}
+
+.member1 .remove1:hover {
+    font-size: 32px;
+}
+
+.members_box1 .add_member1 {
+    font-size: 40px;
+    padding: 1rem;
+    margin-left: 1rem;
+    color: #0d6efd;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.members_box1 .add_member1:hover {
+    font-size: 43px;
+}

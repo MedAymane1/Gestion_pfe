@@ -1,7 +1,7 @@
-<div class="container py-2" id="prfl-box">
-    <h3 class="text-primary">Edit Profile</h3>
+<div class="container py-3" id="prfl-box">
+    <h1 class="text-primary">Edit Profile</h1>
     <hr>
-    <form method="POST" onsubmit="event.preventDefault()">
+    <form id="prfl-grp" method="POST" onsubmit="event.preventDefault()">
         <div class="row justify-content-center">
             <!-- left column -->
             <div class="col-lg-3 col-md-5 pt-4 mb-3">
@@ -9,7 +9,7 @@
                     <img src="<?php echo $img ?>"
                          class="profil_img2"
                          alt="Failed to load image">
-                         <div>
+                    <div>
                         <label for="file-image" class="py-2">
                             Change your profile picture
                         </label>
@@ -39,19 +39,20 @@
                         </div>
                     </div>
                 </div>
-                <h3 class="py-2">groupe info</h3>
+                <h3 class="py-2">Group info</h3>
 
                 <div class="row mb-3">
-                    <label for="fname" class="col-md-3 form-label">Group name:</label>
+                    <label for="nom_grp" class="col-md-3 form-label">Group name:</label>
                     <div class="col-md-9">
                         <input id="fname"
-                               name="fname"
+                               name="nom_grp"
                                class="form-control"
                                type="text"
-                               value="<?php echo $prenom_enc ?>">
+                               value="<?php echo $nom_grp ?>">
                     </div>
                 </div>
 
+               
 
                 <div class="row mb-3">
                     <label for="userName" class="col-md-3 form-label">Group User name:</label>
@@ -85,103 +86,28 @@
             </div>
         </div>
     </form>
-    <h3 class="text-primary">groupe members</h3>
-    <hr>
-<div id="members">
+
+<!-- members group -->
+
+    <h1 class="text-primary">groupe members</h1>
+       <hr>
+
+    <div>
     <!-- card group --> 
-    <div class="row gy-3 my-3">
+    <div id="members" class="row gy-3 my-3 " style="grid-column-gap: 4rem;">
         <!--  -->
-        <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="card" style="border-radius: 15px; width:16rem">
-                <div class="card-body text-center">
-                  <div class="mt-3 mb-4">
-                    <img src="<?php echo $img ?>"
-                      class="rounded-circle img-fluid" style="width: 100px;" />
-                  </div>
-                  <h4 class="mb-2">amyn</h4>
-                  <div class="info d-flex w-100 flex-column">
-                      <div  id="cne" class="w-100 d-flex  ">
-                          <p class="w-30" style="font-weight: 700;">cne   :</p>
-                          <label class="w-70" for="fname" style="padding-left: 2rem;">12345 </label>
-                      </div>
-            
-                      <div  id="apogee" class="w-100 d-flex ">
-                          <p class="w-30" style="font-weight: 700;">apogee :</p>
-                          <label class="w-70" for="fname" style="padding-left: 0.4rem;">12345 </label>
-                      </div>
-
-                    <div  id="gmal" class="w-100 d-flex">
-                        <p class="w-30" style="font-weight: 700;">gmail:</p>
-                        <label class="w-70" for="fname" style="padding-left: 0.4rem;">amynali265@gmail.com</label>
-                    </div>
-
-                  </div> 
-             </div>
-         </div>
-     </div>
-     <!--  -->
-     <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="card" style="border-radius: 15px; width:16rem">
-                <div class="card-body text-center">
-                  <div class="mt-3 mb-4">
-                    <img src="<?php echo $img ?>"
-                      class="rounded-circle img-fluid" style="width: 100px;" />
-                  </div>
-                  <h4 class="mb-2">amyn</h4>
-                  <div class="info d-flex w-100 flex-column">
-                      <div  id="cne" class="w-100 d-flex  ">
-                          <p class="w-30" style="font-weight: 700;">cne   :</p>
-                          <label class="w-70" for="fname" style="padding-left: 2rem;">12345 </label>
-                      </div>
-            
-                      <div  id="apogee" class="w-100 d-flex ">
-                          <p class="w-30" style="font-weight: 700;">apogee :</p>
-                          <label class="w-70" for="fname" style="padding-left: 0.4rem;">12345 </label>
-                      </div>
-
-                    <div  id="gmal" class="w-100 d-flex">
-                        <p class="w-30" style="font-weight: 700;">gmail:</p>
-                        <label class="w-70" for="fname" style="padding-left: 0.4rem;">amynali265@gmail.com</label>
-                    </div>
-
-                  </div> 
-             </div>
-         </div>
-     </div>
-     <!--  -->
-     <div class="col-sm-6 col-md-4 col-lg-3">
-            <div class="card" style="border-radius: 15px; width:16rem">
-                <div class="card-body text-center">
-                  <div class="mt-3 mb-4">
-                    <img src="<?php echo $img ?>"
-                      class="rounded-circle img-fluid" style="width: 100px;" />
-                  </div>
-                  <h4 class="mb-2">amyn</h4>
-                  <div class="info d-flex w-100 flex-column">
-                      <div  id="cne" class="w-100 d-flex  ">
-                          <p class="w-30" style="font-weight: 700;">cne   :</p>
-                          <label class="w-70" for="fname" style="padding-left: 2rem;">12345 </label>
-                      </div>
-            
-                      <div  id="apogee" class="w-100 d-flex ">
-                          <p class="w-30" style="font-weight: 700;">apogee :</p>
-                          <label class="w-70" for="fname" style="padding-left: 0.4rem;">12345 </label>
-                      </div>
-
-                    <div  id="gmal" class="w-100 d-flex">
-                        <p class="w-30" style="font-weight: 700;">gmail:</p>
-                        <label class="w-70" for="fname" style="padding-left: 0.4rem;">amynali265@gmail.com</label>
-                    </div>
-
-                  </div> 
-             </div>
-         </div>
-     </div>
-        
-   </div>
+       
     
 
+  </div>
 </div>
+
+
+
+    <!-- end  -->
+</div>
+
 <div id="pass-box" class="pass_box2 d_none2">
     <!--  -->
+    
 </div>
