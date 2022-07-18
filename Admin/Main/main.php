@@ -47,10 +47,11 @@ catch(Exception $e) {
         </div>
         <div class="d-flex align-items-center">  
             <div class="px-4">
-                <span class="fs-5">Admin name</span>
+                <span class="fs-5">Admin</span>
             </div>
             <div class="header_img">
-                <img src="" alt="Image Not Found">
+                <img src="../../Uploads/Images/Supervisors_images/profile-image.png"
+                     alt="Image Not Found">
             </div>
         </div>
     </header>
@@ -65,25 +66,21 @@ catch(Exception $e) {
 
                 <div class="nav_list">
                     <a class="nav_link active" title="list-etd">
-                        <i class="bx bx-group nav_icon"></i>
+                        <i class="fa-solid fa-list fs-5"></i>
                         <span class="nav_name">Students list</span>
                     </a>
                     <a class="nav_link" title="list-enc">
-                        <i class="bx bx-user nav_icon"></i>
+                        <i class="fa-solid fa-list fs-5"></i>
                         <span class="nav_name">Supervisors list</span>
                     </a>
                     <a class="nav_link" title="accounts">
-                        <i class="bx bx-conversation nav_icon"></i>
+                        <i class="fa-solid fa-users fs-5"></i>
                         <span class="nav_name">Accounts</span>
                     </a>
                     <a class="nav_link" title="reg-stu">
-                        <i class="bx bx-calendar nav_icon"></i>
-                        <span class="nav_name">Calendar</span>
+                        <i class="fa-solid fa-user-graduate fs-5"></i>
+                        <span class="nav_name">Registered students</span>
                     </a>
-                    <!-- <a class="nav_link" title="sugg">
-                        <i class="bx bx-briefcase nav_icon" ></i>
-                        <span class="nav_name">Suggestions</span>
-                    </a> -->
                 </div>
             </div>
             <a href="#" class="nav_link">

@@ -4,7 +4,7 @@
 
 <link rel="stylesheet" href="../../bootstrap.min.css">
 <link rel="stylesheet" href="main.css">
-<link rel="stylesheet" href="../List_etd/list_etd1.css">
+<link rel="stylesheet" href="../List_etd/list_etd2.css">
 <link rel="stylesheet" href="../List_enc/list_enc2.css">
 <link rel="stylesheet" href="../Accounts/accounts4.css">
 <link rel="stylesheet" href="../Students/students2.css">

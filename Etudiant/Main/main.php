@@ -14,7 +14,7 @@
 </head>
 <!-- onload="renderDate()" removed form tag bady  -->
 
-<body id="body-pd" class="" >
+<body id="body-pd" class="bg-light" >
     <header class="header" id="header">
         <div class="header_toggle">
             <i class="bx bx-menu" id="header-toggle"></i>

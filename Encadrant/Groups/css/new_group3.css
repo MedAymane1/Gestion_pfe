@@ -85,15 +85,15 @@
 .list_etd1 thead {
     position: sticky;
     top: 0;
+    background-color: #c5e2fc;
 }
 
 .list_etd1 tr {
     border-bottom: 1px solid #ddd;
 }
 
-.list_etd1 thead,
-.list_etd1 tr:hover {
-    background-color: #c5e2fc;
+.list_etd1 tbody tr:hover {
+    background-color: #ece7ff;
 }
 
 .list_etd1 th,

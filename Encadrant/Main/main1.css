@@ -42,7 +42,7 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
-    background-color: var(--white-color);
+    background-color: #f4f1ff;
     z-index: var(--z-fixed);
     transition: .5s
 }

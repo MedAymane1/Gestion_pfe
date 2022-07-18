@@ -175,7 +175,7 @@
     max-width: calc(100% - 95px);
 }
 .outgoing .details p{
-    background: #4723d9;
+    background: #27aac5;
     color: #fff;
     margin-bottom: 0.2rem;
 }
@@ -256,7 +256,7 @@
     font-family: "Font Awesome 6 Brands";
     font-weight: 400;
     font-size: 42px;
-    color: #084298;
+    color: #27aac5;
 }
 
 /* .continer_all_chat .chats_space{

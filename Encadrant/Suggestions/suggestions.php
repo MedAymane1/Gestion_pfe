@@ -1,6 +1,6 @@
 <div class="container pt-4">
     <div class="header_sugg5">
-        <h2>Project Ideas For Your Groups</h2>
+        <h2 class="pb-2">Project Ideas For Your Groups</h2>
         <div class="d-flex">
             <input type="text"
                     id="new-sugg"

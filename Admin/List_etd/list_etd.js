@@ -116,7 +116,7 @@ function addStudent(btn) {
 }
 
 // 
-function deleteEtd(apogee) {
+function deleteEtd(btn) {
   let xhr = new XMLHttpRequest();
   xhr.open("POST", "../List_etd/php/list_etd_back.php", true);
   xhr.onload = ()=> {
@@ -128,7 +128,7 @@ function deleteEtd(apogee) {
     }
   }
   xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-  xhr.send("deleteEtd=" + apogee);
+  xhr.send("deleteEtd=" + btn.getAttribute("data-code"));
 }
 
 // 

@@ -67,7 +67,7 @@
     border-bottom: none;
 }
 
-/* .table_box1 table i {
+.table_box1 table i {
     cursor: pointer;
     font-size: 18px;
     color: red;
@@ -75,7 +75,7 @@
 
 .table_box1 table i:hover {
     font-size: 19px;
-} */
+}
 
 /*--------- Style for add Student -----------*/
 .add_stu_box {
