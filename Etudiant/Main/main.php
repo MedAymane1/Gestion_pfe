@@ -66,7 +66,7 @@
                     </a>
                 </div>
             </div>
-            <a href="#" class="nav_link" >
+            <a href="../../Login/php/logout.php?logout_id=<?php echo $id_compte;?>" class="nav_link" >
                 <i class='bx bx-log-out nav_icon'></i>
                 <span class="nav_name">SignOut</span>
             </a>
