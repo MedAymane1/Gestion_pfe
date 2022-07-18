@@ -100,7 +100,7 @@ if(isset($_POST['nom_enc']) &&
             $allowed_exs = array('jpg', 'jpeg', 'png' ,'webp');
             if(in_array($img_ex_to_lc, $allowed_exs)){
                $new_img_name = uniqid($username, true).'.'.$img_ex_to_lc;
-               $img_upload_path = '../upload/'.$new_img_name;
+               $img_upload_path = '../../Uploads/Images/Supervisors_images/'.$new_img_name;
                move_uploaded_file($tmp_name, $img_upload_path);
 
                // Insert into Database
@@ -122,7 +122,7 @@ if(isset($_POST['nom_enc']) &&
                   VALUES(?,?,?,?,?,?)";
                 $stmt = $conn->prepare($sql);
                 $stmt->execute([$nom, $prenom, $email, $code, $new_img_name, $id_compte]);
-                header("Location: ../index_enc.php?success=Your account has been created successfully");
+                header("Location: ../index.php?success=Your account has been created successfully ");
                  exit;
                }
             }else {
@@ -160,7 +160,7 @@ if(isset($_POST['nom_enc']) &&
                   VALUES(?,?,?,?,?)";
                 $stmt = $conn->prepare($sql);
                 $stmt->execute([$nom, $prenom, $email, $code, $id_compte]);
-                header("Location: ../index.php");
+                header("Location: ../index.php?success=Your account has been created successfully ");
                  exit;
                
         

@@ -25,20 +25,7 @@
             <!-- edit form column -->
             <div class="col-lg-9">
                 <div class="alert_area2">
-                    <div class="alert alert-info alert-dismissable">
-                        <div class="d-flex justify-content-between">
-                            <div>
-                                This is an 
-                                <strong>.alert</strong>
-                                . Use this to show important messages to the user.
-                            </div>
-                            <button type="button"
-                                    class="btn-close"
-                                    data-bs-dismiss="alert"
-                                    aria-label="Close">
-                            </button>
-                        </div>
-                    </div>
+                    
                 </div>
                 <h3 class="py-2">Personal info</h3>
 

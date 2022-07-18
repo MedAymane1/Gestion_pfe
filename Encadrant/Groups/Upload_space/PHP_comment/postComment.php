@@ -43,7 +43,7 @@ if(isset($_POST['id_grp'] )&& isset($_SESSION['code_enc'])  && $_POST['status'] 
 
                     $schow ='<div class="card mb-2 border-secondary">
                     <div class="card-header bg-secondary py-1 text-light">
-                    <span class="font-italic">T:'.$row['comment_title'].'</span>
+                    <span class="font-italic">Title: '.$row['comment_title'].'</span>
                     <span class="float-right font-italic"style=" position: absolute; right: 1rem;"> On : '.$row['date'].'</span>
                     
                   </div>

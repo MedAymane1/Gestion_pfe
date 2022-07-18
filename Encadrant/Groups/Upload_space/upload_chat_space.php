@@ -19,7 +19,7 @@
             
             </div>
         </div>
-        <div class="chat_space" style=" box-shadow: 1px 1px 2px 2px; background:black; margin-left:10px; margin-top:10px; height:81vh" >
+        <div class="chat_space" style=" box-shadow: 1px 1px 2px 2px; background:#b5b0b0; margin-left:10px; margin-top:10px; height:81vh" >
            
 
 
@@ -28,7 +28,7 @@
         <div class="row justify-content-center mb-2" style=" margin-top:-8px;">
            <div class="col-lg-5 bg-light rounded mt-2" style="width:95.5%; margin-top:-30px ; height:47vh"><br>
             <h4 class="text-center p-2">Write your comment!</h4>
-            <form  method="POST" id="formComment" class="p-2">
+            <form  method="POST" id="formComment" class="p-2" style="margin-top:-20px">
                 <!-- <input type="hidden" name="id_comment" value="<?//= $user_id; ?>"> -->
                 <div class="form-group">
                     <h6 >Title</h6>

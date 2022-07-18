@@ -76,7 +76,7 @@ if(isset($_POST['apogee']) &&
             $allowed_exs = array('jpg', 'jpeg', 'png' ,'webp');
             if(in_array($img_ex_to_lc, $allowed_exs)){
                $new_img_name = uniqid($cne, true).'.'.$img_ex_to_lc;
-               $img_upload_path = '../upload/'.$new_img_name;
+               $img_upload_path = '../../Uploads/Images/Students_images/'.$new_img_name;
                move_uploaded_file($tmp_name, $img_upload_path);
 
                // Insert into Database

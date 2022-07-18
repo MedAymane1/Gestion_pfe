@@ -23,6 +23,11 @@
 			  <?php echo $_GET['error']; ?>
 			</div>
 		    <?php } ?>
+			<?php if(isset($_GET['success'])){ ?>
+    		<div class="alert alert-success" role="alert" style="width: auto; height: 5vh; margin-top: -4vh;">
+			  <p style="margin-top: -2vh;"><?php echo $_GET['success']; ?></p>
+			</div>
+		    <?php } ?>
 
 		  <div class="mb-3">
 		    <label class="form-label" style="margin-bottom:-4vh; margin-top:0.9vh">User name</label>
