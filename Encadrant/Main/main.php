@@ -61,13 +61,13 @@ else {
                 <a href="#" class="nav_logo">
                     <!-- <img src="../../images/logo1.jpg" alt="logo" style="width: 8rem; margin-left: 2.4rem; margin-bottom: -2.2rem;"> -->
                     <i class="fa-solid fa-graduation-cap nav_logo-icon"></i>
-                    <!-- <i class="bx bxs-graduation nav_logo-icon"></i>
-                    <span class="nav_logo-name">BBBootstrap</span> -->
+                    <span class="nav_logo-name">Gestion de PFE</span>
                 </a>
 
                 <div class="nav_list">
                     <a href="#grp" class="nav_link active" title="grp">
                         <i class="bx bx-group nav_icon"></i>
+
                         <span class="nav_name">Groups</span>
                     </a>
                     <a href="#prfl" class="nav_link" title="prfl">

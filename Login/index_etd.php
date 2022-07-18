@@ -89,7 +89,7 @@
 		  </div>
 		  
 		  <button type="submit" class="btn btn-primary">Sign Up</button>
-		  <a href="index.php" class="link-secondary" style="color:white; margin-left:1.9vh">Signup Encadrant?</a>
+		  <a href="index_enc.php" class="link-secondary" style="color:white; margin-left:1.9vh">Signup Encadrant?</a>
 		  
 		</form>
     </div>

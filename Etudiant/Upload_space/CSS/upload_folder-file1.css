@@ -209,7 +209,7 @@
     transform: translate(-50%,-50%);
     outline: none;
     border: none;
-    background:#f8f8f8;
+    background:white;
     cursor: pointer;
     border-radius: 10px;
   }

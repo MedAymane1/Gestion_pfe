@@ -22,28 +22,28 @@ if(isset($_POST['nom_enc']) &&
     
     if (empty($nom)) {
     	$em = "Nom is required";
-    	header("Location: ../index.php?error=$em&$data");
+    	header("Location: ../index_enc.php?error=$em&$data");
 	    exit;
     }else if(empty($prenom)){
     	$em = "Prenom is required";
-    	header("Location: ../index.php?error=$em&$data");
+    	header("Location: ../index_enc.php?error=$em&$data");
 	    exit;
     }else if(empty($username)){ 
       $em = "Username is required";
-      header("Location: ../index.php?error=$em&$data");
+      header("Location: ../index_enc.php?error=$em&$data");
       exit;
    }else if(empty($email)){
       $em = "Email is required";
-      header("Location: ../index.php?error=$em&$data");
+      header("Location: ../index_enc.php?error=$em&$data");
       exit;
    }else if(empty($code)){
       $em = "Code_Enc is required";
-      header("Location: ../index.php?error=$em&$data");
+      header("Location: ../index_enc.php?error=$em&$data");
       exit;
    }else 
      if(empty($passwd)){
     	$em = "Password is required";
-    	header("Location: ../index.php?error=$em&$data");
+    	header("Location: ../index_enc.php?error=$em&$data");
 	    exit;
     }else {
          //   verifie compte
@@ -53,7 +53,7 @@ if(isset($_POST['nom_enc']) &&
 
       if($stmtIfCompteExist->rowCount() != 0){
          $em = "Username already exist";
-         header("Location: ../index.php?error=$em&$data");
+         header("Location: ../index_enc.php?error=$em&$data");
          exit;
       }
 
@@ -65,7 +65,7 @@ if(isset($_POST['nom_enc']) &&
 
       if($stmtGetencadrant->rowCount() == 0){
       $em = "Encadrant not exist with this code";
-      header("Location: ../index.php?error=$em&$data");
+      header("Location: ../index_enc.php?error=$em&$data");
       exit;
       }
 
@@ -77,7 +77,7 @@ if(isset($_POST['nom_enc']) &&
 
       if($stmtIfEncadrantExist->rowCount() != 0){
       $em = "Encadrant already exist";
-      header("Location: ../index.php?error=$em&$data");
+      header("Location: ../index_enc.php?error=$em&$data");
       exit;
       }
       
@@ -100,7 +100,7 @@ if(isset($_POST['nom_enc']) &&
             $allowed_exs = array('jpg', 'jpeg', 'png' ,'webp');
             if(in_array($img_ex_to_lc, $allowed_exs)){
                $new_img_name = uniqid($username, true).'.'.$img_ex_to_lc;
-               $img_upload_path = '../upload/'.$new_img_name;
+               $img_upload_path = '../../Uploads/Images/Supervisors_images/'.$new_img_name;
                move_uploaded_file($tmp_name, $img_upload_path);
 
                // Insert into Database
@@ -122,17 +122,17 @@ if(isset($_POST['nom_enc']) &&
                   VALUES(?,?,?,?,?,?)";
                 $stmt = $conn->prepare($sql);
                 $stmt->execute([$nom, $prenom, $email, $code, $new_img_name, $id_compte]);
-                header("Location: ../index.php?success=Your account has been created successfully");
+                header("Location: ../index.php?success=Your account has been created successfully ");
                  exit;
                }
             }else {
                $em = "You can't upload files of this type";
-               header("Location: ../index.php?error=$em&$data");
+               header("Location: ../index_enc.php?error=$em&$data");
                exit;
             }
          }else {
             $em = "unknown error occurred!";
-            header("Location: ../index.php?error=$em&$data");
+            header("Location: ../index_enc.php?error=$em&$data");
             exit;
          }
       }else {
@@ -160,7 +160,7 @@ if(isset($_POST['nom_enc']) &&
                   VALUES(?,?,?,?,?)";
                 $stmt = $conn->prepare($sql);
                 $stmt->execute([$nom, $prenom, $email, $code, $id_compte]);
-                header("Location: ../index.php?success=Your account has been created successfully");
+                header("Location: ../index.php?success=Your account has been created successfully ");
                  exit;
                
         
@@ -169,6 +169,6 @@ if(isset($_POST['nom_enc']) &&
 
   }
 }else {
-	header("Location: ../index.php?error=error");
+	header("Location: ../index_enc.php?error=error");
 	exit;
 }

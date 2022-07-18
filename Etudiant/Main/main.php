@@ -14,7 +14,7 @@
 </head>
 <!-- onload="renderDate()" removed form tag bady  -->
 
-<body id="body-pd" class="bg-light" >
+<body id="body-pd" class="" >
     <header class="header" id="header">
         <div class="header_toggle">
             <i class="bx bx-menu" id="header-toggle"></i>
@@ -33,13 +33,13 @@
             <div>
                 <a href="#" class="nav_logo">
                     <i class="fa-solid fa-graduation-cap nav_logo-icon"></i>
-                    <!-- <i class="bx bxs-graduation nav_logo-icon"></i>
-                    <span class="nav_logo-name">BBBootstrap</span> -->
-                </a>
+                    <!-- <i class="bx bxs-graduation nav_logo-icon"></i> -->
+                    <span class="nav_logo-name">Gestion de PFE</span>
+                 </a>
 
                 <div class="nav_list">
                     <a href="#grp" class="nav_link active" title="groupe">
-                        <i class="bx bx-group nav_icon"></i>
+                        <i class='bx bx-cloud-upload nav_icon' style="font-size: 1.73rem;"></i>
                         <span class="nav_name">Groups</span>
                     </a>
                     <a href="#prfl" class="nav_link" title="profile">

@@ -13,10 +13,10 @@ if(isset($_SESSION['id_grp'])&& isset($_SESSION['code_enc'])){
         $result=$conn->query($sql);
         if($result->rowCount()>0){
           while($donnes=$result->fetch()){
-            $comment='<div class="col-lg-5 rounded bg-light p-3">
+            $comment='<div class="col-lg-5 rounded p-3">
                            <div class="card mb-2 border-secondary">
                                <div class="card-header bg-secondary py-1 text-light">
-                                      <span class="font-italic">T: '.$donnes['comment_title'].' </span>
+                                      <span class="font-italic">Title: '.$donnes['comment_title'].' </span>
                                       <span class="float-right font-italic"style=" position: absolute; right: 1rem;"> On : '.$donnes['date'].' </span>
               
                                 </div>
