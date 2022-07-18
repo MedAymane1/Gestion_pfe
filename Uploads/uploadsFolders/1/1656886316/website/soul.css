@@ -1,9 +1,0 @@
-.header{height: 800px; background-color: rgb(215, 142, 230) ; text-align: center;padding: 10px;}
-.contener{width: 800px; margin: auto;}
-.menu{height: 40px; padding-top: 10px; background: rgb(114, 26, 173);}
-.menu .contener h2{color: rgb(8, 121, 219); float: left; position: relative; bottom: 35px;}
-.menu .contener ul{list-style: none;}
-.menu .contener ul li{float: right; color: rgb(26, 37, 48) ; position: relative ;bottom: 40px; margin: 30px;}
-.menu .contener ul li:hover{color: aqua; border-left: solid 1px rgb(226, 186, 24); border-right: solid; color: cornsilk;}
-.courses .contener .box1 {float: left; width: 40%;}
-.contener .contener .M{ float: right; width: 50%;}

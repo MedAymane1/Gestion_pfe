@@ -1,0 +1,40 @@
+/* body {
+    margin-top: 1.5rem;
+    height: 100%;
+}
+
+.profilImg {
+    padding: .25rem;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #dee2e6;
+}
+
+<i class="fa-regular fa-image"></i>
+<i class="fa-regular fa-file-image"></i>
+
+*/
+
+/* 
+.input_file {
+    background: white;
+    border: 1px solid #ced4da;
+    border-radius: 50px;
+    outline: none;
+    width: 80%;
+}
+
+::-webkit-file-upload-button {
+    color: white;
+    background-color: #007fee;
+    padding: .5rem;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+}
+
+::-webkit-file-upload-button:hover {
+    background-color: #459ce9;
+}
+*/
