@@ -25,11 +25,11 @@ if(isset($_POST['apogee']) &&
     	header("Location: ../index_etd.php?error=$em&$data");
 	    exit;
     }else if(empty($nom)){
-      $em = "Nom is required";
+      $em = "First name is required";
       header("Location: ../index_etd.php?error=$em&$data");
       exit;
    }else if(empty($prenom)){
-      $em = "Prenom is required";
+      $em = "Last name is required";
       header("Location: ../index_etd.php?error=$em&$data");
       exit;
    }else 
@@ -45,7 +45,7 @@ if(isset($_POST['apogee']) &&
       $stmtGetetudiant->execute([$apogee,$cne]);
 
       if($stmtGetetudiant->rowCount() == 0){
-      $em = "Etudiant not exist in the list";
+      $em = "You are not exist in the list";
       header("Location: ../index_etd.php?error=$em&$data");
       exit;
       }
@@ -57,7 +57,7 @@ if(isset($_POST['apogee']) &&
       $stmtIfEtudiantExist->execute([$apogee, $cne]);
 
       if($stmtIfEtudiantExist->rowCount() != 0){
-      $em = "Etudiant already exist";
+      $em = "You are already registered !!";
       header("Location: ../index_etd.php?error=$em&$data");
       exit;
       }
@@ -110,7 +110,7 @@ if(isset($_POST['apogee']) &&
        	$stmt = $conn->prepare($sql);
        	$stmt->execute([$apogee, $cne, $nom, $prenom, $email]);
 
-       	header("Location: ../index_etd.php?success=Your account has been created successfully");
+       	header("Location: ../index_etd.php?success=You have been successfully registered");
    	    exit;
       }
     }

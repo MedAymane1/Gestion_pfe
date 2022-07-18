@@ -21,11 +21,11 @@ if(isset($_POST['nom_enc']) &&
     $data = "nom_enc=".$nom."&prenom_enc=".$prenom."&username=".$username."&email_enc=".$email."&code_enc=".$code;
     
     if (empty($nom)) {
-    	$em = "Nom is required";
+    	$em = "First name is required";
     	header("Location: ../index_enc.php?error=$em&$data");
 	    exit;
     }else if(empty($prenom)){
-    	$em = "Prenom is required";
+    	$em = "Last name is required";
     	header("Location: ../index_enc.php?error=$em&$data");
 	    exit;
     }else if(empty($username)){ 
@@ -37,7 +37,7 @@ if(isset($_POST['nom_enc']) &&
       header("Location: ../index_enc.php?error=$em&$data");
       exit;
    }else if(empty($code)){
-      $em = "Code_Enc is required";
+      $em = "Personal code is required";
       header("Location: ../index_enc.php?error=$em&$data");
       exit;
    }else 

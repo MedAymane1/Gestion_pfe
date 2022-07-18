@@ -1,0 +1,31 @@
+.w-450 {
+	width: 450px;
+}
+.vh-100 {
+	min-height: 100vh;
+
+}
+.w-450 {
+	width:450px;
+}
+
+body{
+	/* background-color: rgb(98, 196, 209); */
+	background-image: url("../../Uploads/Images/Project_images/33.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.mb-3{
+	margin-top: -22px;
+	margin-bottom: 20px;
+	color: rgb(0, 168, 168);
+
+}
+.label{
+	margin-top:5px;
+	margin-bottom: 5px;
+}
+.form-control{
+ background: transparent!important;
+}
+

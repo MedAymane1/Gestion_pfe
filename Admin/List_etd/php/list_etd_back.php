@@ -26,12 +26,9 @@ if( isset($_GET["status"]) ) {
                                 <td>' . $data["nom_etd"] . '</td>
                                 <td>' . $data["prenom_etd"] . '</td>
                                 <td class="action1">
-                                    <button type="submit"
-                                            class="btn btn-danger"
-                                            value="' . $data["apogee"] . '"
-                                            onclick="deleteEtd(this.value)">
-                                        Delete
-                                    </button>
+                                    <i class="fa-regular fa-trash-can"
+                                       data-code="' . $data["apogee"] . '"
+                                       onclick="deleteEtd(this)"></i>
                                 </td>
                               </tr>';
             }

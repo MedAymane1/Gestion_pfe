@@ -3,16 +3,16 @@
       rel="stylesheet"> -->
 
 <link rel="stylesheet" href="../../bootstrap.min.css">
-<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="main1.css">
 <link rel="stylesheet" href="../Groups/css/groups.css">
-<link rel="stylesheet" href="../Groups/css/new_group1.css">
+<link rel="stylesheet" href="../Groups/css/new_group3.css">
 <link rel="stylesheet" href="../Groups/css/edit_group1.css">
 <link rel="stylesheet" href="../Groups/Upload_space/CSS/upload_chat4.css">
 
 <link rel="stylesheet" href="../Profile/css/profile3.css">
 <link rel="stylesheet" href="../Profile/css/password3.css">
 
-<link rel="stylesheet" href="../Messages/css/messages4.css">
+<link rel="stylesheet" href="../Messages/css/messages.css">
 
 <link rel="stylesheet" href="../Calendar/calendar.css">
 
