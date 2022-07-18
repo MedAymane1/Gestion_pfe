@@ -1,32 +1,12 @@
-<!-- 
+<?php
 session_start();
-if( !isset($_SESSION['id_compte']) ) {
-    header("Location: ../../Login/logout.php");
+if(!isset($_SESSION['id_compte']) ) {
+    header("Location: ../../Login/index.php");
     exit(-1);
+}else{
+    $id=$_SESSION['id_compte'];
 }
-
-include_once "../../db_conn.php";
-
-try {
-    $id = $_SESSION["id_compte"];
-    $query = "SELECT * FROM encadrant NATURAL JOIN compte WHERE id_compte=$id";
-    $res = $conn->query($query);
-    $data = $res->fetch();
-    
-    $code_enc = $_SESSION["code_enc"] = $data["code_enc"];
-    $nom_enc = $data["nom_enc"];
-    $prenom_enc = $data["prenom_enc"];
-    $fullName = $nom_enc . " " . $prenom_enc;
-    $email_enc = $data["email_enc"];
-    $username = $data["username"];
-    $passwd = $data["passwd"];
-    $img ="../../Uploads/Images/Supervisors_images/" .  $data["img_enc"];
-}
-catch(Exception $e) {
-    die("Error: " . $e->getMessage());
-}
- -->
-
+?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -86,7 +66,7 @@ catch(Exception $e) {
                     </a> -->
                 </div>
             </div>
-            <a href="#" class="nav_link">
+            <a href="../../Login/php/logout.php?logout_id=<?php echo $id;?>" class="nav_link">
                 <i class='bx bx-log-out nav_icon'></i>
                 <span class="nav_name">SignOut</span>
             </a>
